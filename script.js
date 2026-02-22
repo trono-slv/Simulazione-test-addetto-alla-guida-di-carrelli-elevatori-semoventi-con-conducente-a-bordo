@@ -71,8 +71,7 @@ const QUESTION_BANK = [
         ref: "Accordo Stato-Regioni 22/02/2012",
         suggestion: "L'Accordo Stato-Regioni del 22/02/2012 prevede l'aggiornamento obbligatorio ogni 5 anni con un corso di almeno 4 ore. L'aggiornamento copre: novità normative, evoluzioni tecniche delle attrezzature, analisi di infortuni, buone pratiche di sicurezza. La mancata partecipazione comporta la decadenza dell'abilitazione."
     },
-    const questionBank = [
-  {
+      {
     id: 1,
     question: "Secondo D.Lgs 81/2008 Titolo III Capo I, le attrezzature di lavoro devono essere:",
     options: [
