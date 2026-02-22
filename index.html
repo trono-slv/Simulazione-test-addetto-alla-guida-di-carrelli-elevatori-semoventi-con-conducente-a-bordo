@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Carrelli Elevatori - Autovalutazione</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="screen active">
+        <div class="container">
+            <div class="card glass">
+                <div class="header">
+                    <div class="icons">🚜 📦 🟫</div>
+                    <h1>Test Autovalutazione per Addetti alla Guida di Carrelli Elevatori Semoventi con Conducente a Bordo (Muletti)</h1>
+                </div>
+                
+                <div class="info-box">
+                    <h2>📋 Informazioni sul Test</h2>
+                    <ul>
+                        <li><strong>Domande:</strong> 20 estratte casualmente</li>
+                        <li><strong>Tempo:</strong> 25 minuti</li>
+                        <li><strong>Soglia superamento:</strong> 70% (14/20 corrette)</li>
+                        <li><strong>Modalità:</strong> Risposta singola, avanzamento automatico</li>
+                    </ul>
+                </div>
+
+                <button id="startBtn" class="btn btn-primary">
+                    ▶️ Inizia Test
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" class="screen">
+        <div class="container">
+            <div class="card glass">
+                <!-- Timer & Progress -->
+                <div class="quiz-header">
+                    <div class="timer" id="timer">⏱️ 25:00</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                        <span class="progress-text" id="progressText">Domanda 1 di 20</span>
+                    </div>
+                </div>
+
+                <!-- Question -->
+                <div class="question-container">
+                    <div class="category-badge" id="categoryBadge"></div>
+                    <h2 class="question" id="question"></h2>
+                    <div class="options" id="options"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="resultsScreen" class="screen">
+        <div class="container">
+            <div class="card glass">
+                <div class="results-header">
+                    <div class="score-badge" id="scoreBadge"></div>
+                    <h2 id="resultTitle"></h2>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-value" id="scorePercent"></div>
+                        <div class="stat-label">Punteggio</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="correctCount"></div>
+                        <div class="stat-label">Corrette</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="wrongCount"></div>
+                        <div class="stat-label">Errate</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="timeUsed"></div>
+                        <div class="stat-label">Tempo Impiegato</div>
+                    </div>
+                </div>
+
+                <div class="result-message" id="resultMessage"></div>
+
+                <!-- Review Section -->
+                <div class="review-section">
+                    <h3>📝 Riepilogo Risposte</h3>
+                    <div id="reviewContainer"></div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button id="repeatBtn" class="btn btn-secondary">
+                        🔄 Ripeti Test
+                    </button>
+                    <button id="newTestBtn" class="btn btn-primary">
+                        🎲 Genera Nuovo Test
+                    </button>
+                    <button id="homeBtn" class="btn btn-outline">
+                        🏠 Torna alla Home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer Modal -->
+    <div id="disclaimerModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>⚠️ ATTENZIONE - CONDIZIONI D'USO</h2>
+            </div>
+
+            <div class="legal-box">
+                <div class="legal-title">⚖️ AVVERTENZE LEGALI</div>
+                
+                <div class="legal-section">
+                    <strong>📜 RIFERIMENTO NORMATIVO:</strong>
+                    <p>Il presente materiale è tutelato ai sensi della Legge 633/1941 sul diritto d'autore e del D.Lgs. 81/2008 in materia di sicurezza.</p>
+                </div>
+
+                <div class="legal-section">
+                    <strong>⚠️ SANZIONI PENALI:</strong>
+                    <p>L'uso non autorizzato può configurare reato di violazione del diritto d'autore (art. 171 L. 633/1941).</p>
+                </div>
+
+                <div class="legal-section">
+                    <strong>❌ È SEVERAMENTE VIETATO:</strong>
+                    <ul>
+                        <li>❌ Copiare, riprodurre o distribuire senza autorizzazione scritta</li>
+                        <li>❌ Utilizzare per scopi commerciali o lucrativi</li>
+                        <li>❌ Modificare, alterare o manipolare i contenuti</li>
+                        <li>❌ Rimuovere credits o riferimenti all'autore</li>
+                    </ul>
+                </div>
+
+                <div class="legal-section">
+                    <strong>✅ AUTORIZZAZIONE RICHIESTA:</strong>
+                    <p>Per qualsiasi utilizzo contattare:<br>
+                    <strong>Dott. Salvatore Trono</strong> - Esperto SSL - Docente Formatore</p>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <p><strong>📚 FINALITÀ DIDATTICA:</strong><br>
+                Questo strumento è destinato ESCLUSIVAMENTE a scopo di autovalutazione formativa. NON sostituisce la formazione obbligatoria per conducenti di carrelli elevatori ai sensi dell'Accordo Stato-Regioni 22/02/2012.</p>
+                
+                <p><strong>⚠️ NOTA IMPORTANTE:</strong><br>
+                La formazione certificata deve essere erogata da enti accreditati e comprende moduli teorici, pratici e verifica finale.</p>
+            </div>
+
+            <div class="modal-actions">
+                <button id="cancelBtn" class="btn btn-outline">Annulla</button>
+                <button id="acceptBtn" class="btn btn-accept">✅ Accetto le Condizioni</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Credits -->
+    <footer class="credits">
+        <div class="divider"></div>
+        <p><strong>Credits: Dott. Salvatore Trono</strong></p>
+        <p>Laureato in Servizi Giuridici per l'Impresa • Formatore • Esperto in Sicurezza sui Luoghi di Lavoro</p>
+        <div class="divider"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
