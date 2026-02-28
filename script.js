@@ -5,10 +5,10 @@ const QUESTION_BANK = [
 id: 1,
 question: "Quale articolo del D.Lgs. 81/2008 disciplina l'obbligo di formazione per gli addetti alla conduzione di attrezzature di lavoro?",
 options: [
-"A) Art. 18",
-"B) Art. 37",
-"C) Art. 71",
-"D) Art. 73"
+"Art. 18",
+"Art. 37",
+"Art. 71",
+"Art. 73"
 ],
 correct: 3,
 category: "normativa",
@@ -20,10 +20,10 @@ suggestion: "L’Art. 73 impone formazione, informazione e addestramento specifi
 id: 2,
 question: "Quale disposizione prevede l'abilitazione specifica per la conduzione dei carrelli elevatori?",
 options: [
-"A) Art. 36 D.Lgs. 81/2008",
-"B) Art. 73 comma 5 D.Lgs. 81/2008",
-"C) Art. 18 D.Lgs. 81/2008",
-"D) Allegato IV"
+"Art. 36 D.Lgs. 81/2008",
+"Art. 73 comma 5 D.Lgs. 81/2008",
+"Art. 18 D.Lgs. 81/2008",
+"Allegato IV"
 ],
 correct: 1,
 category: "normativa",
@@ -35,10 +35,10 @@ suggestion: "L’abilitazione è disciplinata dall’Art. 73 c.5 e regolamentata
 id: 3,
 question: "Qual è la durata minima del corso di abilitazione per carrelli industriali semoventi?",
 options: [
-"A) 8 ore",
-"B) 10 ore",
-"C) 12 ore",
-"D) 16 ore"
+" 8 ore",
+" 10 ore",
+" 12 ore",
+" 16 ore"
 ],
 correct: 2,
 category: "normativa",
@@ -50,10 +50,10 @@ suggestion: "La durata minima prevista è 12 ore comprensive di modulo teorico e
 id: 4,
 question: "Quale attrezzatura NON richiede abilitazione specifica ai sensi dell’Art. 73 comma 5?",
 options: [
-"A) Carrello elevatore",
-"B) Gru a torre",
-"C) Piattaforma elevabile",
-"D) Transpallet manuale"
+" Carrello elevatore",
+" Gru a torre",
+" Piattaforma elevabile",
+" Transpallet manuale"
 ],
 correct: 3,
 category: "normativa",
@@ -65,10 +65,10 @@ suggestion: "Il transpallet manuale non rientra tra le attrezzature per cui è r
 id: 5,
 question: "Chi deve garantire che il carrello elevatore sia mantenuto in condizioni di sicurezza?",
 options: [
-"A) L’operatore",
-"B) Il datore di lavoro",
-"C) Il RLS",
-"D) Il preposto"
+" L’operatore",
+" Il datore di lavoro",
+" Il RLS",
+" Il preposto"
 ],
 correct: 1,
 category: "responsabilità",
@@ -80,10 +80,10 @@ suggestion: "Il datore di lavoro deve assicurare manutenzione, controlli periodi
 id: 6,
 question: "Quale principio tecnico determina la stabilità di un carrello elevatore?",
 options: [
-"A) Il colore del mezzo",
-"B) Il triangolo di stabilità",
-"C) Il tipo di carburante",
-"D) Il numero di fari"
+" Il colore del mezzo",
+" Il triangolo di stabilità",
+" Il tipo di carburante",
+" Il numero di fari"
 ],
 correct: 1,
 category: "stabilità",
@@ -95,10 +95,10 @@ suggestion: "La stabilità dipende dal triangolo formato dai punti di appoggio e
 id: 7,
 question: "Qual è una causa frequente di ribaltamento laterale?",
 options: [
-"A) Curva affrontata ad alta velocità",
-"B) Uso del lampeggiante",
-"C) Carico leggero",
-"D) Motore acceso al minimo"
+" Curva affrontata ad alta velocità",
+" Uso del lampeggiante",
+" Carico leggero",
+" Motore acceso al minimo"
 ],
 correct: 0,
 category: "stabilità",
@@ -110,10 +110,10 @@ suggestion: "L’eccessiva velocità in curva può spostare il baricentro fuori 
 id: 8,
 question: "La cintura di sicurezza, se presente sul carrello, deve essere:",
 options: [
-"A) Utilizzata sempre",
-"B) Usata solo su richiesta",
-"C) Rimossa",
-"D) Facoltativa"
+" Utilizzata sempre",
+" Usata solo su richiesta",
+" Rimossa",
+" Facoltativa"
 ],
 correct: 0,
 category: "sicurezza_operativa",
@@ -125,10 +125,10 @@ suggestion: "I dispositivi di ritenuta devono essere utilizzati secondo le indic
 id: 9,
 question: "Prima dell’utilizzo del carrello l’operatore deve:",
 options: [
-"A) Iniziare immediatamente il lavoro",
-"B) Effettuare controlli visivi e funzionali",
-"C) Controllare solo il carburante",
-"D) Verificare solo le forche"
+" Iniziare immediatamente il lavoro",
+" Effettuare controlli visivi e funzionali",
+" Controllare solo il carburante",
+" Verificare solo le forche"
 ],
 correct: 1,
 category: "manutenzione",
@@ -140,10 +140,10 @@ suggestion: "È obbligatorio verificare efficienza dei freni, sterzo, dispositiv
 id: 10,
 question: "Durante il trasporto il carico deve essere mantenuto:",
 options: [
-"A) Il più alto possibile",
-"B) A circa 10–15 cm dal suolo",
-"C) Oscillante",
-"D) Inclinato in avanti"
+" Il più alto possibile",
+" A circa 10–15 cm dal suolo",
+" Oscillante",
+" Inclinato in avanti"
 ],
 correct: 1,
 category: "tecnica_operativa",
@@ -154,10 +154,10 @@ suggestion: "Il carico deve essere mantenuto basso e leggermente inclinato all�
 id: 11,
 question: "Quale obbligo ha il lavoratore nell'utilizzo del carrello elevatore?",
 options: [
-"A) Utilizzarlo secondo formazione e istruzioni ricevute",
-"B) Modificarlo se necessario",
-"C) Delegarne l’uso a colleghi non formati",
-"D) Ignorare le procedure aziendali"
+" Utilizzarlo secondo formazione e istruzioni ricevute",
+" Modificarlo se necessario",
+" Delegarne l’uso a colleghi non formati",
+" Ignorare le procedure aziendali"
 ],
 correct: 0,
 category: "responsabilità",
@@ -169,10 +169,10 @@ suggestion: "Il lavoratore deve utilizzare correttamente le attrezzature conform
 id: 12,
 question: "Quale elemento contribuisce alla stabilità longitudinale del carrello?",
 options: [
-"A) Il contrappeso",
-"B) Il volante",
-"C) Il clacson",
-"D) Il sedile"
+" Il contrappeso",
+" Il volante",
+" Il clacson",
+" Il sedile"
 ],
 correct: 0,
 category: "stabilità",
@@ -184,10 +184,10 @@ suggestion: "Il contrappeso bilancia il carico sollevato mantenendo il baricentr
 id: 13,
 question: "Il sovraccarico del carrello può provocare:",
 options: [
-"A) Maggiore stabilità",
-"B) Nessun effetto",
-"C) Ribaltamento in avanti",
-"D) Riduzione dei consumi"
+" Maggiore stabilità",
+" Nessun effetto",
+" Ribaltamento in avanti",
+" Riduzione dei consumi"
 ],
 correct: 2,
 category: "stabilità",
@@ -199,10 +199,10 @@ suggestion: "Superare la portata nominale può spostare il baricentro oltre il l
 id: 14,
 question: "La portata nominale del carrello è indicata:",
 options: [
-"A) Sul libretto personale del lavoratore",
-"B) Sulla targhetta identificativa del mezzo",
-"C) Sul casco dell’operatore",
-"D) Sul DVR"
+" Sul libretto personale del lavoratore",
+" Sulla targhetta identificativa del mezzo",
+" Sul casco dell’operatore",
+" Sul DVR"
 ],
 correct: 1,
 category: "tecnica_operativa",
@@ -214,10 +214,10 @@ suggestion: "La targhetta riporta portata, altezza di sollevamento e condizioni 
 id: 15,
 question: "È consentito sollevare persone con le forche?",
 options: [
-"A) Sempre",
-"B) Solo con apposita piattaforma conforme",
-"C) Mai in nessun caso",
-"D) Solo per brevi periodi"
+" Sempre",
+" Solo con apposita piattaforma conforme",
+" Mai in nessun caso",
+" Solo per brevi periodi"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -229,10 +229,10 @@ suggestion: "Il sollevamento di persone è consentito solo con attrezzature idon
 id: 16,
 question: "Durante la marcia con carico ingombrante che limita la visibilità l’operatore deve:",
 options: [
-"A) Procedere in retromarcia",
-"B) Accelerare",
-"C) Guidare con forche alte",
-"D) Spegnere il lampeggiante"
+" Procedere in retromarcia",
+" Accelerare",
+" Guidare con forche alte",
+" Spegnere il lampeggiante"
 ],
 correct: 0,
 category: "sicurezza_operativa",
@@ -244,10 +244,10 @@ suggestion: "Se la visuale anteriore è ostruita è necessario procedere in retr
 id: 17,
 question: "Le verifiche periodiche delle attrezzature sono a carico di:",
 options: [
-"A) Lavoratore",
-"B) RLS",
-"C) Datore di lavoro",
-"D) Cliente"
+" Lavoratore",
+" RLS",
+" Datore di lavoro",
+" Cliente"
 ],
 correct: 2,
 category: "responsabilità",
@@ -259,10 +259,10 @@ suggestion: "Il datore di lavoro deve assicurare controlli iniziali e periodici 
 id: 18,
 question: "L’utilizzo del telefono cellulare durante la guida del carrello:",
 options: [
-"A) È consentito",
-"B) È vietato perché fonte di distrazione",
-"C) È obbligatorio",
-"D) È facoltativo"
+" È consentito",
+" È vietato perché fonte di distrazione",
+" È obbligatorio",
+" È facoltativo"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -274,10 +274,10 @@ suggestion: "La distrazione durante la guida aumenta significativamente il risch
 id: 19,
 question: "Le forche devono essere posizionate durante la sosta:",
 options: [
-"A) Sollevate",
-"B) Abbassate completamente a terra",
-"C) In posizione intermedia",
-"D) Inclinate in avanti"
+" Sollevate",
+" Abbassate completamente a terra",
+" In posizione intermedia",
+" Inclinate in avanti"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -289,10 +289,10 @@ suggestion: "Le forche devono essere completamente abbassate per evitare rischio
 id: 20,
 question: "In caso di guasto l’operatore deve:",
 options: [
-"A) Continuare il lavoro",
-"B) Tentare riparazioni improvvisate",
-"C) Segnalare immediatamente al responsabile",
-"D) Ignorare il problema"
+" Continuare il lavoro",
+" Tentare riparazioni improvvisate",
+" Segnalare immediatamente al responsabile",
+" Ignorare il problema"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -303,10 +303,10 @@ suggestion: "Il lavoratore deve segnalare immediatamente eventuali difetti o con
 id: 21,
 question: "Durante la percorrenza di una rampa con carico, il carrello deve essere condotto:",
 options: [
-"A) Con il carico rivolto verso valle",
-"B) Con il carico rivolto verso monte",
-"C) In folle",
-"D) Trasversalmente"
+" Con il carico rivolto verso valle",
+" Con il carico rivolto verso monte",
+" In folle",
+" Trasversalmente"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -318,10 +318,10 @@ suggestion: "In salita il carico deve essere sempre rivolto verso monte per mant
 id: 22,
 question: "Quale comportamento è corretto in prossimità di incroci o zone cieche?",
 options: [
-"A) Accelerare",
-"B) Suonare il clacson e rallentare",
-"C) Procedere senza segnalazioni",
-"D) Spegnere il lampeggiante"
+" Accelerare",
+" Suonare il clacson e rallentare",
+" Procedere senza segnalazioni",
+" Spegnere il lampeggiante"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -333,10 +333,10 @@ suggestion: "Rallentare e segnalare la propria presenza riduce il rischio di col
 id: 23,
 question: "Il baricentro del sistema carrello-carico varia in funzione di:",
 options: [
-"A) Altezza e peso del carico",
-"B) Colore del carrello",
-"C) Tipo di sedile",
-"D) Marca del mezzo"
+" Altezza e peso del carico",
+" Colore del carrello",
+" Tipo di sedile",
+" Marca del mezzo"
 ],
 correct: 0,
 category: "stabilità",
@@ -348,10 +348,10 @@ suggestion: "L’innalzamento del carico e l’aumento del peso spostano il bari
 id: 24,
 question: "La manutenzione ordinaria deve essere eseguita:",
 options: [
-"A) Solo in caso di guasto",
-"B) Secondo le indicazioni del fabbricante",
-"C) A discrezione dell’operatore",
-"D) Una volta all’anno senza criteri"
+" Solo in caso di guasto",
+" Secondo le indicazioni del fabbricante",
+" A discrezione dell’operatore",
+" Una volta all’anno senza criteri"
 ],
 correct: 1,
 category: "manutenzione",
@@ -363,10 +363,10 @@ suggestion: "Le operazioni di manutenzione devono seguire il manuale d’uso e m
 id: 25,
 question: "È consentito trasportare persone sulle forche?",
 options: [
-"A) Sì, se per breve durata",
-"B) Solo con autorizzazione verbale",
-"C) No, salvo utilizzo di piattaforma conforme",
-"D) Sempre"
+" Sì, se per breve durata",
+" Solo con autorizzazione verbale",
+" No, salvo utilizzo di piattaforma conforme",
+" Sempre"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -378,10 +378,10 @@ suggestion: "Il sollevamento di persone è ammesso solo con attrezzature specifi
 id: 26,
 question: "Il carrello elevatore deve essere utilizzato:",
 options: [
-"A) Solo per gli usi previsti dal fabbricante",
-"B) Per qualsiasi attività di sollevamento",
-"C) Come mezzo di traino universale",
-"D) Senza limiti operativi"
+" Solo per gli usi previsti dal fabbricante",
+" Per qualsiasi attività di sollevamento",
+" Come mezzo di traino universale",
+" Senza limiti operativi"
 ],
 correct: 0,
 category: "normativa",
@@ -393,10 +393,10 @@ suggestion: "Le attrezzature devono essere utilizzate conformemente alle istruzi
 id: 27,
 question: "Quale documento contiene le istruzioni operative del carrello?",
 options: [
-"A) DVR",
-"B) Manuale d’uso e manutenzione",
-"C) Attestato del lavoratore",
-"D) Registro presenze"
+" DVR",
+" Manuale d’uso e manutenzione",
+" Attestato del lavoratore",
+" Registro presenze"
 ],
 correct: 1,
 category: "tecnica_operativa",
@@ -408,10 +408,10 @@ suggestion: "Il manuale del fabbricante contiene limiti di utilizzo, manutenzion
 id: 28,
 question: "La guida con forche sollevate comporta:",
 options: [
-"A) Maggiore stabilità",
-"B) Riduzione del rischio",
-"C) Spostamento del baricentro e aumento del rischio ribaltamento",
-"D) Nessuna conseguenza"
+" Maggiore stabilità",
+" Riduzione del rischio",
+" Spostamento del baricentro e aumento del rischio ribaltamento",
+" Nessuna conseguenza"
 ],
 correct: 2,
 category: "stabilità",
@@ -423,10 +423,10 @@ suggestion: "Forche sollevate alzano il baricentro riducendo la stabilità compl
 id: 29,
 question: "Il datore di lavoro deve assicurare che l’operatore sia:",
 options: [
-"A) Esperto informalmente",
-"B) Autorizzato e formato",
-"C) Solo maggiorenne",
-"D) In possesso di patente B"
+" Esperto informalmente",
+" Autorizzato e formato",
+" Solo maggiorenne",
+" In possesso di patente B"
 ],
 correct: 1,
 category: "responsabilità",
@@ -438,10 +438,10 @@ suggestion: "È obbligatoria formazione specifica e autorizzazione formale all�
 id: 30,
 question: "In caso di ribaltamento laterale l’operatore deve:",
 options: [
-"A) Saltare fuori",
-"B) Restare seduto con cintura allacciata",
-"C) Alzarsi in piedi",
-"D) Abbandonare il volante"
+" Saltare fuori",
+" Restare seduto con cintura allacciata",
+" Alzarsi in piedi",
+" Abbandonare il volante"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -453,10 +453,10 @@ suggestion: "Restare seduti con cintura allacciata riduce il rischio di schiacci
 id: 31,
 question: "La verifica dell’efficienza dei freni rientra tra:",
 options: [
-"A) Controlli preliminari",
-"B) Attività facoltative",
-"C) Compiti del cliente",
-"D) Operazioni vietate"
+" Controlli preliminari",
+" Attività facoltative",
+" Compiti del cliente",
+" Operazioni vietate"
 ],
 correct: 0,
 category: "manutenzione",
@@ -468,10 +468,10 @@ suggestion: "Prima dell’utilizzo devono essere verificati i principali disposi
 id: 32,
 question: "L’uso improprio del carrello può comportare:",
 options: [
-"A) Nessuna conseguenza",
-"B) Sanzioni e responsabilità penali",
-"C) Solo richiamo verbale",
-"D) Aumento produttività"
+" Nessuna conseguenza",
+" Sanzioni e responsabilità penali",
+" Solo richiamo verbale",
+" Aumento produttività"
 ],
 correct: 1,
 category: "responsabilità",
@@ -483,10 +483,10 @@ suggestion: "Il mancato rispetto delle norme può generare responsabilità civil
 id: 33,
 question: "Le batterie dei carrelli elettrici devono essere ricaricate:",
 options: [
-"A) In ambienti ventilati",
-"B) In qualsiasi luogo",
-"C) In ufficio",
-"D) In prossimità di fiamme libere"
+" In ambienti ventilati",
+" In qualsiasi luogo",
+" In ufficio",
+" In prossimità di fiamme libere"
 ],
 correct: 0,
 category: "sicurezza_operativa",
@@ -498,10 +498,10 @@ suggestion: "Durante la ricarica possono svilupparsi gas; è necessario operare 
 id: 34,
 question: "Il sovraccarico rispetto alla portata nominale è:",
 options: [
-"A) Consentito temporaneamente",
-"B) Vietato",
-"C) Raccomandato",
-"D) Facoltativo"
+" Consentito temporaneamente",
+" Vietato",
+" Raccomandato",
+" Facoltativo"
 ],
 correct: 1,
 category: "stabilità",
@@ -513,10 +513,10 @@ suggestion: "Il superamento della portata nominale compromette la stabilità e l
 id: 35,
 question: "Il lampeggiante serve a:",
 options: [
-"A) Illuminare il magazzino",
-"B) Segnalare la presenza del mezzo",
-"C) Migliorare la velocità",
-"D) Ridurre il consumo"
+" Illuminare il magazzino",
+" Segnalare la presenza del mezzo",
+" Migliorare la velocità",
+" Ridurre il consumo"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -528,10 +528,10 @@ suggestion: "I dispositivi luminosi aumentano la visibilità del mezzo nelle are
 id: 36,
 question: "La sostituzione di componenti deve essere effettuata:",
 options: [
-"A) Con pezzi non originali qualsiasi",
-"B) Con ricambi idonei secondo indicazioni del fabbricante",
-"C) Dall’operatore senza competenze",
-"D) Senza spegnere il mezzo"
+" Con pezzi non originali qualsiasi",
+" Con ricambi idonei secondo indicazioni del fabbricante",
+" Dall’operatore senza competenze",
+" Senza spegnere il mezzo"
 ],
 correct: 1,
 category: "manutenzione",
@@ -543,10 +543,10 @@ suggestion: "La manutenzione deve rispettare le specifiche tecniche del costrutt
 id: 37,
 question: "Il carrello elevatore può essere utilizzato come gru generica?",
 options: [
-"A) Sempre",
-"B) Solo se previsto dal fabbricante",
-"C) Mai",
-"D) A discrezione del lavoratore"
+" Sempre",
+" Solo se previsto dal fabbricante",
+" Mai",
+" A discrezione del lavoratore"
 ],
 correct: 1,
 category: "tecnica_operativa",
@@ -558,10 +558,10 @@ suggestion: "L’attrezzatura deve essere impiegata solo per gli usi previsti da
 id: 38,
 question: "L’operatore deve conoscere:",
 options: [
-"A) Solo la velocità massima",
-"B) Procedure operative e rischi specifici",
-"C) Solo il peso del mezzo",
-"D) Il numero di telaio"
+" Solo la velocità massima",
+" Procedure operative e rischi specifici",
+" Solo il peso del mezzo",
+" Il numero di telaio"
 ],
 correct: 1,
 category: "normativa",
@@ -573,10 +573,10 @@ suggestion: "La formazione deve includere rischi specifici e corrette procedure 
 id: 39,
 question: "La circolazione in magazzino deve rispettare:",
 options: [
-"A) Regole definite dall’azienda",
-"B) Nessuna regola",
-"C) Solo indicazioni verbali",
-"D) Preferenze personali"
+" Regole definite dall’azienda",
+" Nessuna regola",
+" Solo indicazioni verbali",
+" Preferenze personali"
 ],
 correct: 0,
 category: "sicurezza_operativa",
@@ -588,10 +588,10 @@ suggestion: "Il datore di lavoro deve organizzare la viabilità interna in sicur
 id: 40,
 question: "La revisione periodica dell’attrezzatura deve essere documentata:",
 options: [
-"A) No",
-"B) Solo verbalmente",
-"C) Sì, con registrazione dei controlli",
-"D) Solo in caso di incidente"
+" No",
+" Solo verbalmente",
+" Sì, con registrazione dei controlli",
+" Solo in caso di incidente"
 ],
 correct: 2,
 category: "manutenzione",
@@ -602,10 +602,10 @@ suggestion: "Le verifiche devono essere registrate e conservate a disposizione d
 id: 41,
 question: "In caso di incendio in area di ricarica batterie, l’operatore deve:",
 options: [
-"A) Continuare la ricarica",
-"B) Intervenire solo dopo il turno",
-"C) Allontanarsi in sicurezza e attivare le procedure di emergenza",
-"D) Spegnere con acqua"
+" Continuare la ricarica",
+" Intervenire solo dopo il turno",
+" Allontanarsi in sicurezza e attivare le procedure di emergenza",
+" Spegnere con acqua"
 ],
 correct: 2,
 category: "emergenza_antincendio",
@@ -617,10 +617,10 @@ suggestion: "Le procedure antincendio aziendali devono essere attivate immediata
 id: 42,
 question: "L’uso dell’estintore su carrello endotermico deve avvenire:",
 options: [
-"A) Solo con acqua",
-"B) Con estintore idoneo (polvere ABC o CO2)",
-"C) Con sabbia umida",
-"D) Senza spegnere il mezzo"
+" Solo con acqua",
+" Con estintore idoneo (polvere ABC o CO2)",
+" Con sabbia umida",
+" Senza spegnere il mezzo"
 ],
 correct: 1,
 category: "emergenza_antincendio",
@@ -632,10 +632,10 @@ suggestion: "La tipologia di estintore deve essere adeguata alla classe di incen
 id: 43,
 question: "La formazione per carrellisti deve prevedere:",
 options: [
-"A) Solo teoria online",
-"B) Solo prova pratica",
-"C) Modulo teorico e pratico con verifica finale",
-"D) Solo lettura del manuale"
+" Solo teoria online",
+" Solo prova pratica",
+" Modulo teorico e pratico con verifica finale",
+" Solo lettura del manuale"
 ],
 correct: 2,
 category: "normativa",
@@ -647,10 +647,10 @@ suggestion: "L’Accordo Stato-Regioni prevede formazione teorica e pratica con 
 id: 44,
 question: "La durata dell’abilitazione per carrelli elevatori è:",
 options: [
-"A) 1 anno",
-"B) 3 anni",
-"C) 5 anni",
-"D) Illimitata"
+" 1 anno",
+" 3 anni",
+" 5 anni",
+" Illimitata"
 ],
 correct: 2,
 category: "normativa",
@@ -662,10 +662,10 @@ suggestion: "L’abilitazione ha validità quinquennale con obbligo di aggiornam
 id: 45,
 question: "L’aggiornamento per carrellisti deve essere effettuato:",
 options: [
-"A) Ogni 5 anni",
-"B) Ogni anno",
-"C) Solo in caso di incidente",
-"D) Mai"
+" Ogni 5 anni",
+" Ogni anno",
+" Solo in caso di incidente",
+" Mai"
 ],
 correct: 0,
 category: "normativa",
@@ -677,10 +677,10 @@ suggestion: "È previsto aggiornamento quinquennale minimo di 4 ore."
 id: 46,
 question: "Chi deve verificare l’idoneità dell’operatore alla guida del carrello?",
 options: [
-"A) Solo l’operatore",
-"B) Il datore di lavoro o il preposto",
-"C) Il manutentore",
-"D) Il collega più anziano"
+" Solo l’operatore",
+" Il datore di lavoro o il preposto",
+" Il manutentore",
+" Il collega più anziano"
 ],
 correct: 1,
 category: "responsabilità",
@@ -692,10 +692,10 @@ suggestion: "Il datore di lavoro deve vigilare sull’idoneità e sulla formazio
 id: 47,
 question: "Il patentino per carrelli elevatori è:",
 options: [
-"A) Cedibile",
-"B) Aziendale",
-"C) Personale e nominativo",
-"D) Facoltativo"
+" Cedibile",
+" Aziendale",
+" Personale e nominativo",
+" Facoltativo"
 ],
 correct: 2,
 category: "normativa",
@@ -707,10 +707,10 @@ suggestion: "L’abilitazione è personale e non trasferibile."
 id: 48,
 question: "Prima di utilizzare un carrello diverso da quello abituale, l’operatore deve:",
 options: [
-"A) Solo provarlo",
-"B) Ricevere informazione e addestramento specifico",
-"C) Guidarlo lentamente",
-"D) Chiedere ai colleghi"
+" Solo provarlo",
+" Ricevere informazione e addestramento specifico",
+" Guidarlo lentamente",
+" Chiedere ai colleghi"
 ],
 correct: 1,
 category: "formazione",
@@ -722,10 +722,10 @@ suggestion: "L’addestramento deve essere adeguato anche in caso di cambio attr
 id: 49,
 question: "L’esposizione a gas di scarico in ambienti chiusi si riduce:",
 options: [
-"A) Usando mezzi endotermici senza ventilazione",
-"B) Preferendo carrelli elettrici o garantendo adeguato ricambio d’aria",
-"C) Accelerando al massimo",
-"D) Tenendo porte chiuse"
+"Usando mezzi endotermici senza ventilazione",
+"Preferendo carrelli elettrici o garantendo adeguato ricambio d’aria",
+"Accelerando al massimo",
+"Tenendo porte chiuse"
 ],
 correct: 1,
 category: "salute_lavoro",
@@ -737,10 +737,10 @@ suggestion: "L’esposizione ad agenti chimici deve essere ridotta tramite misur
 id: 50,
 question: "Il controllo giornaliero dell’attrezzatura è previsto:",
 options: [
-"A) Solo in caso di guasto",
-"B) Prima dell’inizio del turno",
-"C) Una volta al mese",
-"D) Solo dal manutentore"
+" Solo in caso di guasto",
+" Prima dell’inizio del turno",
+" Una volta al mese",
+" Solo dal manutentore"
 ],
 correct: 1,
 category: "manutenzione",
@@ -751,10 +751,10 @@ suggestion: "Le attrezzature devono essere mantenute in efficienza e controllate
 id: 51,
 question: "Come si verifica la portata massima di un carrello elevatore?",
 options: [
-"A) Consultando la targhetta di portata applicata dal costruttore",
-"B) Stimando il peso del carico visivamente",
-"C) Consultando il libretto di circolazione",
-"D) In base al colore del carrello"
+" Consultando la targhetta di portata applicata dal costruttore",
+" Stimando il peso del carico visivamente",
+" Consultando il libretto di circolazione",
+" In base al colore del carrello"
 ],
 correct: 0,
 category: "stabilità_operativa",
@@ -766,10 +766,10 @@ suggestion: "La portata nominale è indicata sulla targhetta del costruttore e d
 id: 52,
 question: "Se durante la marcia si avverte una vibrazione anomala, l’operatore deve:",
 options: [
-"A) Proseguire la marcia",
-"B) Arrestare immediatamente il mezzo in sicurezza e segnalare l’anomalia",
-"C) Accelerare per stabilizzare il mezzo",
-"D) Limitarsi a rallentare"
+") Proseguire la marcia",
+") Arrestare immediatamente il mezzo in sicurezza e segnalare l’anomalia",
+") Accelerare per stabilizzare il mezzo",
+") Limitarsi a rallentare"
 ],
 correct: 1,
 category: "manutenzione_controlli",
@@ -781,10 +781,10 @@ suggestion: "Qualsiasi anomalia deve essere segnalata immediatamente e il mezzo 
 id: 53,
 question: "Qual è la procedura corretta per salire sul carrello elevatore?",
 options: [
-"A) Saltare direttamente nella cabina",
-"B) Utilizzare il gradino antiscivolo e il maniglione di presa",
-"C) Salire esclusivamente dal lato sinistro",
-"D) Accedere da dietro il mezzo"
+") Saltare direttamente nella cabina",
+") Utilizzare il gradino antiscivolo e il maniglione di presa",
+") Salire esclusivamente dal lato sinistro",
+") Accedere da dietro il mezzo"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -796,10 +796,10 @@ suggestion: "È necessario utilizzare i punti di accesso previsti dal costruttor
 id: 54,
 question: "Quando deve essere utilizzata la retromarcia durante la movimentazione?",
 options: [
-"A) Sempre",
-"B) Quando il carico limita o impedisce la visibilità anteriore",
-"C) Solo in salita",
-"D) Solo durante le ore notturne"
+") Sempre",
+") Quando il carico limita o impedisce la visibilità anteriore",
+") Solo in salita",
+") Solo durante le ore notturne"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -811,10 +811,10 @@ suggestion: "La retromarcia è obbligatoria quando la visibilità anteriore è c
 id: 55,
 question: "Cosa indica la lettera “Q” sulla targhetta di portata?",
 options: [
-"A) La velocità massima consentita",
-"B) La portata nominale del carrello",
-"C) Il numero di matricola",
-"D) L’anno di fabbricazione"
+") La velocità massima consentita",
+") La portata nominale del carrello",
+") Il numero di matricola",
+") L’anno di fabbricazione"
 ],
 correct: 1,
 category: "stabilità_operativa",
@@ -826,25 +826,25 @@ suggestion: "La lettera Q identifica la capacità nominale di sollevamento espre
 id: 56,
 question: "Durante la percorrenza su pendenza, il carico deve essere mantenuto:",
 options: [
-"A) Sollevato alla massima altezza",
-"B) Basso e inclinato all’indietro",
-"C) Inclinato in avanti",
-"D) Posizionato lateralmente"
+") Sollevato alla massima altezza",
+") Basso e inclinato all’indietro",
+") Inclinato in avanti",
+") Posizionato lateralmente"
 ],
 correct: 1,
 category: "stabilità_operativa",
 ref: "-",
-suggestion: "Il carico deve essere mantenuto basso (circa 15-20 cm da terra) e inclinato verso il montante per garantire stabilità."
+suggestion: "Il carico deve essere mantenuto basso (circa 15-20 cm da terr ) e inclinato verso il montante per garantire stabilità."
 },
 
 {
 id: 57,
 question: "Qual è l’effetto di un carico decentrato lateralmente?",
 options: [
-"A) Aumenta la stabilità",
-"B) Riduce la stabilità trasversale aumentando il rischio di ribaltamento",
-"C) Non produce effetti",
-"D) Aumenta la velocità del mezzo"
+") Aumenta la stabilità",
+") Riduce la stabilità trasversale aumentando il rischio di ribaltamento",
+") Non produce effetti",
+") Aumenta la velocità del mezzo"
 ],
 correct: 1,
 category: "stabilità_operativa",
@@ -856,10 +856,10 @@ suggestion: "Il carico decentrato sposta il baricentro fuori dal triangolo di st
 id: 58,
 question: "Prima di sollevare un carico è necessario:",
 options: [
-"A) Verificare che il peso rientri nella portata indicata",
-"B) Sollevare immediatamente",
-"C) Chiedere al collega più vicino",
-"D) Attivare il clacson"
+") Verificare che il peso rientri nella portata indicata",
+") Sollevare immediatamente",
+") Chiedere al collega più vicino",
+") Attivare il clacson"
 ],
 correct: 0,
 category: "stabilità_operativa",
@@ -871,10 +871,10 @@ suggestion: "È obbligatorio verificare la compatibilità tra peso del carico e 
 id: 59,
 question: "Qual è la procedura corretta per depositare un carico su uno scaffale alto?",
 options: [
-"A) Inclinare in avanti e depositare rapidamente",
-"B) Avvicinarsi con montante verticale, depositare gradualmente e ritirare le forche",
-"C) Inclinare indietro prima del deposito",
-"D) Procedere in retromarcia"
+") Inclinare in avanti e depositare rapidamente",
+") Avvicinarsi con montante verticale, depositare gradualmente e ritirare le forche",
+") Inclinare indietro prima del deposito",
+") Procedere in retromarcia"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -886,10 +886,10 @@ suggestion: "Il deposito deve essere graduale con montante verticale e ritiro co
 id: 60,
 question: "Quando la visibilità anteriore è completamente ostruita dal carico, è necessario:",
 options: [
-"A) Procedere comunque",
-"B) Utilizzare un segnalatore a terra",
-"C) Accelerare per liberare il corridoio",
-"D) Procedere a zig-zag"
+") Procedere comunque",
+") Utilizzare un segnalatore a terra",
+") Accelerare per liberare il corridoio",
+") Procedere a zig-zag"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -900,10 +900,10 @@ suggestion: "Il datore di lavoro deve organizzare la viabilità interna garanten
 id: 61,
 question: "Il datore di lavoro deve assicurare che l’attrezzatura sia:",
 options: [
-"A) Conforme ai requisiti di sicurezza e idonea all’uso previsto",
-"B) Economica",
-"C) Di colore visibile",
-"D) Di recente acquisto"
+") Conforme ai requisiti di sicurezza e idonea all’uso previsto",
+") Economica",
+") Di colore visibile",
+") Di recente acquisto"
 ],
 correct: 0,
 category: "normativa_generale",
@@ -915,10 +915,10 @@ suggestion: "Le attrezzature devono essere conformi ai requisiti di sicurezza e 
 id: 62,
 question: "Quale documento deve attestare l’avvenuta formazione del carrellista?",
 options: [
-"A) Autocertificazione del lavoratore",
-"B) Attestato di abilitazione rilasciato da ente formatore",
-"C) Contratto di lavoro",
-"D) Documento di identità"
+") Autocertificazione del lavoratore",
+") Attestato di abilitazione rilasciato da ente formatore",
+") Contratto di lavoro",
+") Documento di identità"
 ],
 correct: 1,
 category: "formazione_abilitazione",
@@ -930,10 +930,10 @@ suggestion: "L’abilitazione è documentata da attestato nominativo rilasciato 
 id: 63,
 question: "Il preposto ha il compito di:",
 options: [
-"A) Sostituire il datore di lavoro",
-"B) Vigilare sull’osservanza delle procedure di sicurezza",
-"C) Effettuare la manutenzione tecnica",
-"D) Rilasciare attestati"
+") Sostituire il datore di lavoro",
+") Vigilare sull’osservanza delle procedure di sicurezza",
+") Effettuare la manutenzione tecnica",
+") Rilasciare attestati"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -945,10 +945,10 @@ suggestion: "Il preposto sovrintende e vigila sulla corretta esecuzione delle at
 id: 64,
 question: "L’uso di carrelli in ambienti chiusi con motore endotermico richiede:",
 options: [
-"A) Nessuna precauzione",
-"B) Adeguata ventilazione",
-"C) Porte chiuse",
-"D) Velocità elevata"
+") Nessuna precauzione",
+") Adeguata ventilazione",
+") Porte chiuse",
+") Velocità elevata"
 ],
 correct: 1,
 category: "salute_esposizione",
@@ -960,10 +960,10 @@ suggestion: "L’esposizione ad agenti chimici deve essere prevenuta mediante ad
 id: 65,
 question: "Il Documento di Valutazione dei Rischi deve includere:",
 options: [
-"A) Solo rischi generici",
-"B) Rischi connessi all’uso delle attrezzature di lavoro",
-"C) Solo rischi incendio",
-"D) Solo rischi elettrici"
+") Solo rischi generici",
+") Rischi connessi all’uso delle attrezzature di lavoro",
+") Solo rischi incendio",
+") Solo rischi elettrici"
 ],
 correct: 1,
 category: "normativa_generale",
@@ -975,10 +975,10 @@ suggestion: "La valutazione dei rischi deve comprendere tutte le attrezzature ut
 id: 66,
 question: "L’addestramento pratico deve essere effettuato:",
 options: [
-"A) Solo online",
-"B) In presenza con prova operativa",
-"C) Facoltativamente",
-"D) Solo dopo un incidente"
+") Solo online",
+") In presenza con prova operativa",
+") Facoltativamente",
+") Solo dopo un incidente"
 ],
 correct: 1,
 category: "formazione_abilitazione",
@@ -990,10 +990,10 @@ suggestion: "L’addestramento deve prevedere prova pratica documentata."
 id: 67,
 question: "La mancata formazione del carrellista può comportare:",
 options: [
-"A) Nessuna conseguenza",
-"B) Sanzioni penali e amministrative per il datore di lavoro",
-"C) Solo richiamo scritto",
-"D) Sospensione automatica dell’azienda"
+") Nessuna conseguenza",
+") Sanzioni penali e amministrative per il datore di lavoro",
+") Solo richiamo scritto",
+") Sospensione automatica dell’azienda"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1005,10 +1005,10 @@ suggestion: "La violazione degli obblighi formativi comporta sanzioni per il dat
 id: 68,
 question: "Prima dell’inizio del turno, l’operatore deve:",
 options: [
-"A) Effettuare controllo visivo e funzionale del mezzo",
-"B) Iniziare subito il lavoro",
-"C) Delegare il controllo",
-"D) Verificare solo il carburante"
+") Effettuare controllo visivo e funzionale del mezzo",
+") Iniziare subito il lavoro",
+") Delegare il controllo",
+") Verificare solo il carburante"
 ],
 correct: 0,
 category: "manutenzione_controlli",
@@ -1020,10 +1020,10 @@ suggestion: "I controlli preliminari garantiscono l’efficienza e la sicurezza 
 id: 69,
 question: "Il carico deve essere sollevato:",
 options: [
-"A) Con movimenti bruschi",
-"B) Con manovre progressive e controllate",
-"C) Alla massima velocità",
-"D) Con inclinazione in avanti"
+") Con movimenti bruschi",
+") Con manovre progressive e controllate",
+") Alla massima velocità",
+") Con inclinazione in avanti"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1035,10 +1035,10 @@ suggestion: "Le manovre devono essere fluide per evitare instabilità."
 id: 70,
 question: "L’area di ricarica batterie deve essere:",
 options: [
-"A) Non segnalata",
-"B) Segnalata e ventilata",
-"C) Utilizzata come deposito",
-"D) Accessibile a chiunque"
+") Non segnalata",
+") Segnalata e ventilata",
+") Utilizzata come deposito",
+") Accessibile a chiunque"
 ],
 correct: 1,
 category: "emergenza_antincendio",
@@ -1050,10 +1050,10 @@ suggestion: "Le aree a rischio incendio devono essere adeguatamente organizzate 
 id: 71,
 question: "La segnaletica di sicurezza in magazzino serve a:",
 options: [
-"A) Decorare l’ambiente",
-"B) Indicare rischi e percorsi sicuri",
-"C) Identificare i turni",
-"D) Segnalare ferie"
+") Decorare l’ambiente",
+") Indicare rischi e percorsi sicuri",
+") Identificare i turni",
+") Segnalare ferie"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1065,10 +1065,10 @@ suggestion: "La segnaletica informa sui rischi e sulle prescrizioni di sicurezza
 id: 72,
 question: "Il lavoratore ha l’obbligo di:",
 options: [
-"A) Rifiutare ogni incarico",
-"B) Utilizzare correttamente le attrezzature",
-"C) Modificare il mezzo se necessario",
-"D) Sostituire il manutentore"
+") Rifiutare ogni incarico",
+") Utilizzare correttamente le attrezzature",
+") Modificare il mezzo se necessario",
+") Sostituire il manutentore"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1080,10 +1080,10 @@ suggestion: "Il lavoratore deve attenersi alle istruzioni ricevute e utilizzare 
 id: 73,
 question: "L’abilitazione alla guida del carrello è valida:",
 options: [
-"A) Solo nell’azienda di rilascio",
-"B) Su tutto il territorio nazionale",
-"C) Solo nella regione di rilascio",
-"D) Solo nel settore privato"
+") Solo nell’azienda di rilascio",
+") Su tutto il territorio nazionale",
+") Solo nella regione di rilascio",
+") Solo nel settore privato"
 ],
 correct: 1,
 category: "formazione_abilitazione",
@@ -1095,10 +1095,10 @@ suggestion: "L’abilitazione è riconosciuta su tutto il territorio nazionale."
 id: 74,
 question: "In caso di condizioni meteorologiche avverse in area esterna, l’operatore deve:",
 options: [
-"A) Proseguire senza modifiche",
-"B) Valutare il rischio e adeguare la velocità",
-"C) Accelerare",
-"D) Disattivare i dispositivi luminosi"
+") Proseguire senza modifiche",
+") Valutare il rischio e adeguare la velocità",
+") Accelerare",
+") Disattivare i dispositivi luminosi"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1110,10 +1110,10 @@ suggestion: "Le condizioni ambientali influiscono sulla stabilità e sulla sicur
 id: 75,
 question: "La responsabilità della manutenzione straordinaria è in capo a:",
 options: [
-"A) Operatore",
-"B) Datore di lavoro",
-"C) Cliente",
-"D) RLS"
+") Operatore",
+") Datore di lavoro",
+") Cliente",
+") RLS"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1124,10 +1124,10 @@ suggestion: "Il datore di lavoro deve garantire manutenzione ordinaria e straord
 id: 76,
 question: "Un lavoratore esperto che ha guidato carrelli elevatori in un’altra azienda può essere autorizzato immediatamente alla guida?",
 options: [
-"A) Sì, se firma presa visione del DVR",
-"B) Solo dopo verifica abilitazione e integrazione informazione/addestramento sulle condizioni aziendali",
-"C) Sì, in area a basso rischio per un periodo di prova",
-"D) Sì, previa verifica con test scritto interno"
+") Sì, se firma presa visione del DVR",
+") Solo dopo verifica abilitazione e integrazione informazione/addestramento sulle condizioni aziendali",
+") Sì, in area a basso rischio per un periodo di prova",
+") Sì, previa verifica con test scritto interno"
 ],
 correct: 1,
 category: "formazione_abilitazione",
@@ -1139,10 +1139,10 @@ suggestion: "L’esperienza non sostituisce verifica abilitazione e adeguamento 
 id: 77,
 question: "Quale struttura formativa è coerente con l’Accordo Stato-Regioni per carrelli elevatori?",
 options: [
-"A) Solo prova pratica generica",
-"B) Solo modulo tecnico",
-"C) Moduli giuridico-tecnico-pratico con verifica finale e tracciabilità documentale",
-"D) Addestramento interno con attestato firmato dal preposto"
+") Solo prova pratica generica",
+") Solo modulo tecnico",
+") Moduli giuridico-tecnico-pratico con verifica finale e tracciabilità documentale",
+") Addestramento interno con attestato firmato dal preposto"
 ],
 correct: 2,
 category: "formazione_abilitazione",
@@ -1154,10 +1154,10 @@ suggestion: "L’Accordo definisce durata, contenuti, verifica finale e soggetti
 id: 78,
 question: "Assenza di manutenzione documentata su carrello elevatore comporta quale non conformità principale?",
 options: [
-"A) Mancanza indicazione limite velocità",
-"B) Mancanza assegnazione nominativa mezzo",
-"C) Assenza bollino RLS",
-"D) Mancato mantenimento requisiti di sicurezza e tracciabilità controlli"
+") Mancanza indicazione limite velocità",
+") Mancanza assegnazione nominativa mezzo",
+") Assenza bollino RLS",
+") Mancato mantenimento requisiti di sicurezza e tracciabilità controlli"
 ],
 correct: 3,
 category: "manutenzione_controlli",
@@ -1169,10 +1169,10 @@ suggestion: "Il datore di lavoro deve garantire manutenzione e controlli documen
 id: 79,
 question: "Il lavoratore che rileva un’anomalia su dispositivo di segnalazione acustica deve:",
 options: [
-"A) Compensare con maggiore attenzione",
-"B) Segnalare solo se presenti pedoni",
-"C) Segnalare immediatamente e attenersi alle istruzioni ricevute",
-"D) Riparare autonomamente"
+") Compensare con maggiore attenzione",
+") Segnalare solo se presenti pedoni",
+") Segnalare immediatamente e attenersi alle istruzioni ricevute",
+") Riparare autonomamente"
 ],
 correct: 2,
 category: "ruoli_responsabilita",
@@ -1184,10 +1184,10 @@ suggestion: "È obbligatoria la segnalazione immediata delle deficienze."
 id: 80,
 question: "Il preposto che osserva una manovra non sicura deve:",
 options: [
-"A) Annotare e rinviare",
-"B) Intervenire immediatamente e, se necessario, interrompere l’attività",
-"C) Sostituire l’operatore",
-"D) Limitarsi a richiamo verbale generico"
+") Annotare e rinviare",
+") Intervenire immediatamente e, se necessario, interrompere l’attività",
+") Sostituire l’operatore",
+") Limitarsi a richiamo verbale generico"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1199,10 +1199,10 @@ suggestion: "Il preposto vigila e interviene su comportamenti non conformi."
 id: 81,
 question: "L’informazione al lavoratore abilitato deve comunque includere:",
 options: [
-"A) Solo normativa generale",
-"B) Solo portata mezzo",
-"C) Solo manuale costruttore",
-"D) Rischi specifici del luogo e procedure aziendali"
+"  Solo normativa generale",
+" ) Solo portata mezzo",
+" ) Solo manuale costruttore",
+" ) Rischi specifici del luogo e procedure aziendali"
 ],
 correct: 3,
 category: "formazione_abilitazione",
@@ -1214,10 +1214,10 @@ suggestion: "L’informazione deve essere mirata ai rischi specifici."
 id: 82,
 question: "La formazione deve essere:",
 options: [
-"A) Standard identica per tutti",
-"B) Limitata a emergenze",
-"C) Adeguata ai rischi della mansione secondo Accordi vigenti",
-"D) Solo con quiz finale"
+"  Standard identica per tutti",
+" ) Limitata a emergenze",
+" ) Adeguata ai rischi della mansione secondo Accordi vigenti",
+" ) Solo con quiz finale"
 ],
 correct: 2,
 category: "formazione_abilitazione",
@@ -1229,10 +1229,10 @@ suggestion: "La formazione deve essere sufficiente e adeguata ai rischi specific
 id: 83,
 question: "In traffico promiscuo la sicurezza dipende:",
 options: [
-"A) Solo dall’attenzione del mulettista",
-"B) Solo dai DPI pedoni",
-"C) Solo da procedura scritta",
-"D) Da misure organizzative, tecniche e vigilanza del datore/dirigenti"
+" ) Solo dall’attenzione del mulettista",
+" ) Solo dai DPI pedoni",
+" ) Solo da procedura scritta",
+" ) Da misure organizzative, tecniche e vigilanza del datore/dirigenti"
 ],
 correct: 3,
 category: "ruoli_responsabilita",
@@ -1244,10 +1244,10 @@ suggestion: "La prevenzione è responsabilità organizzativa."
 id: 84,
 question: "Cambio reparto con stesse attrezzature ma nuove condizioni operative richiede:",
 options: [
-"A) Nessuna azione",
-"B) Aggiornamento informazione/addestramento mirato",
-"C) Rifare intero corso",
-"D) Solo firma presenza"
+" ) Nessuna azione",
+" ) Aggiornamento informazione/addestramento mirato",
+" ) Rifare intero corso",
+" ) Solo firma presenza"
 ],
 correct: 1,
 category: "formazione_abilitazione",
@@ -1259,10 +1259,10 @@ suggestion: "Le condizioni di impiego incidono sull’adeguatezza della formazio
 id: 85,
 question: "Attestati privi di tracciabilità espongono l’azienda a:",
 options: [
-"A) Nessun rischio",
-"B) Solo rilievo formale minore",
-"C) Impossibilità dimostrare conformità requisiti minimi",
-"D) Problemi solo fiscali"
+" ) Nessun rischio",
+" ) Solo rilievo formale minore",
+" ) Impossibilità dimostrare conformità requisiti minimi",
+" ) Problemi solo fiscali"
 ],
 correct: 2,
 category: "formazione_abilitazione",
@@ -1274,10 +1274,10 @@ suggestion: "Programma, presenze e verifica devono essere documentati."
 id: 86,
 question: "Durante ricarica batteria muletto elettrico il rischio principale è:",
 options: [
-"A) Emissione CO",
-"B) Sviluppo idrogeno e rischio innesco",
-"C) Congelamento elettrolita",
-"D) Solo arco interno"
+" ) Emissione CO",
+" ) Sviluppo idrogeno e rischio innesco",
+" ) Congelamento elettrolita",
+" ) Solo arco interno"
 ],
 correct: 1,
 category: "emergenza_antincendio",
@@ -1289,10 +1289,10 @@ suggestion: "La ventilazione è essenziale per prevenire rischio esplosione."
 id: 87,
 question: "Portata 1.800 kg a 500 mm indica:",
 options: [
-"A) Interasse",
-"B) Altezza da suolo",
-"C) Larghezza forche",
-"D) Distanza orizzontale centro di carico"
+" ) Interasse",
+" ) Altezza da suolo",
+" ) Larghezza forche",
+" ) Distanza orizzontale centro di carico"
 ],
 correct: 3,
 category: "sicurezza_operativa",
@@ -1304,10 +1304,10 @@ suggestion: "Aumentando il centro di carico si riduce la portata effettiva."
 id: 88,
 question: "Con pedana uomo a bordo aumenta il rischio perché:",
 options: [
-"A) Sterzo più morbido",
-"B) Portata maggiore",
-"C) Aumentano velocità ed energia cinetica",
-"D) Frenata sempre perfetta"
+" ) Sterzo più morbido",
+" ) Portata maggiore",
+" ) Aumentano velocità ed energia cinetica",
+" ) Frenata sempre perfetta"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -1319,10 +1319,10 @@ suggestion: "Maggiore velocità implica maggior spazio arresto."
 id: 89,
 question: "Uso muletto endotermico indoor richiede cautela per:",
 options: [
-"A) Riduzione portata automatica",
-"B) Divieto clacson",
-"C) Freni meno efficienti",
-"D) Emissioni e rischio innesco"
+" ) Riduzione portata automatica",
+" ) Divieto clacson",
+" ) Freni meno efficienti",
+" ) Emissioni e rischio innesco"
 ],
 correct: 3,
 category: "salute_esposizione",
@@ -1334,10 +1334,10 @@ suggestion: "Valutare ventilazione ed esposizione a gas di scarico."
 id: 90,
 question: "Trasporto carico alto rispetto necessario:",
 options: [
-"A) Migliora stabilità",
-"B) Non incide",
-"C) Peggiora stabilità per aumento baricentro",
-"D) Migliora frenata"
+" ) Migliora stabilità",
+" ) Non incide",
+" ) Peggiora stabilità per aumento baricentro",
+" ) Migliora frenata"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -1349,10 +1349,10 @@ suggestion: "Baricentro alto aumenta rischio ribaltamento."
 id: 91,
 question: "Pallet danneggiato e carico sporgente richiede:",
 options: [
-"A) Inforcare parzialmente",
-"B) Procedere lentamente",
-"C) Sollevare più in alto",
-"D) Ripristinare sicurezza unità di carico prima movimentazione"
+" ) Inforcare parzialmente",
+" ) Procedere lentamente",
+" ) Sollevare più in alto",
+" ) Ripristinare sicurezza unità di carico prima movimentazione"
 ],
 correct: 3,
 category: "sicurezza_operativa",
@@ -1364,10 +1364,10 @@ suggestion: "Non movimentare carichi instabili."
 id: 92,
 question: "Spazio di arresto dipende principalmente da:",
 options: [
-"A) Tipo pneumatico solo",
-"B) Freno stazionamento",
-"C) Velocità, massa, aderenza, stato impianto frenante",
-"D) Tipo batteria"
+" ) Tipo pneumatico solo",
+" ) Freno stazionamento",
+" ) Velocità, massa, aderenza, stato impianto frenante",
+" ) Tipo batteria"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -1379,10 +1379,10 @@ suggestion: "Energia cinetica e attrito determinano distanza arresto."
 id: 93,
 question: "In rampa con carico è corretto:",
 options: [
-"A) Ruote libere",
-"B) Carico alto",
-"C) Sterzare su pendenza",
-"D) Velocità ridotta e rispetto istruzioni costruttore"
+" ) Ruote libere",
+" ) Carico alto",
+" ) Sterzare su pendenza",
+" ) Velocità ridotta e rispetto istruzioni costruttore"
 ],
 correct: 3,
 category: "sicurezza_operativa",
@@ -1394,10 +1394,10 @@ suggestion: "Le manovre devono essere progressive e controllate."
 id: 94,
 question: "Manomettere sensore presenza operatore è:",
 options: [
-"A) Ammissibile temporaneamente",
-"B) Accettabile per urgenza",
-"C) Vietato: occorre verifica tecnica autorizzata",
-"D) Preferibile sostituire mezzo"
+" ) Ammissibile temporaneamente",
+" ) Accettabile per urgenza",
+" ) Vietato: occorre verifica tecnica autorizzata",
+" ) Preferibile sostituire mezzo"
 ],
 correct: 2,
 category: "manutenzione_controlli",
@@ -1409,10 +1409,10 @@ suggestion: "Non alterare dispositivi di sicurezza."
 id: 95,
 question: "Combinazione più rischiosa in curva:",
 options: [
-"A) Carico centrato e curva ampia",
-"B) Carico alto ma lento",
-"C) Carico instabile e curva stretta veloce",
-"D) Carico centrato e lento"
+" ) Carico centrato e curva ampia",
+" ) Carico alto ma lento",
+" ) Carico instabile e curva stretta veloce",
+" ) Carico centrato e lento"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -1423,10 +1423,10 @@ suggestion: "Instabilità + velocità aumentano rischio rovesciamento."
 id: 96,
 question: "Prima di iniziare il turno, quale verifica è obbligatoria sul carrello elevatore?",
 options: [
-"A) Solo il livello carburante",
-"B) Solo la pulizia della cabina",
-"C) Controllo visivo e funzionale di freni, sterzo, dispositivi di sicurezza e stato generale",
-"D) Nessuna verifica se il mezzo ha lavorato il giorno prima"
+" ) Solo il livello carburante",
+" ) Solo la pulizia della cabina",
+" ) Controllo visivo e funzionale di freni, sterzo, dispositivi di sicurezza e stato generale",
+" ) Nessuna verifica se il mezzo ha lavorato il giorno prima"
 ],
 correct: 2,
 category: "manutenzione_controlli",
@@ -1438,10 +1438,10 @@ suggestion: "L’attrezzatura deve essere mantenuta in efficienza e verificata p
 id: 97,
 question: "La responsabilità della manutenzione periodica programmata ricade su:",
 options: [
-"A) Solo sull’operatore",
-"B) Solo sul manutentore esterno",
-"C) Sul datore di lavoro che deve garantirla",
-"D) Sul RLS"
+" ) Solo sull’operatore",
+" ) Solo sul manutentore esterno",
+" ) Sul datore di lavoro che deve garantirla",
+" ) Sul RLS"
 ],
 correct: 2,
 category: "ruoli_responsabilita",
@@ -1453,10 +1453,10 @@ suggestion: "Il datore di lavoro deve assicurare manutenzione e controlli period
 id: 98,
 question: "Durante la movimentazione di carichi sospesi sopra persone è corretto:",
 options: [
-"A) Procedere rapidamente",
-"B) Avvisare verbalmente e passare comunque",
-"C) Evitare il transito e interdire l’area sottostante",
-"D) Alzare ulteriormente il carico"
+" ) Procedere rapidamente",
+" ) Avvisare verbalmente e passare comunque",
+" ) Evitare il transito e interdire l’area sottostante",
+" ) Alzare ulteriormente il carico"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -1468,10 +1468,10 @@ suggestion: "È vietato transitare con carichi sopra persone."
 id: 99,
 question: "La segnaletica orizzontale nei magazzini serve principalmente a:",
 options: [
-"A) Decorare l’area",
-"B) Separare percorsi pedonali e carrabili",
-"C) Indicare solo limiti di velocità",
-"D) Indicare turni di lavoro"
+" ) Decorare l’area",
+" ) Separare percorsi pedonali e carrabili",
+" ) Indicare solo limiti di velocità",
+" ) Indicare turni di lavoro"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1483,10 +1483,10 @@ suggestion: "La segnaletica contribuisce alla prevenzione delle interferenze."
 id: 100,
 question: "Il triangolo di stabilità del carrello elevatore definisce:",
 options: [
-"A) La velocità massima consentita",
-"B) L’area entro cui deve rimanere il baricentro per evitare ribaltamento",
-"C) L’angolo massimo di sterzata",
-"D) L’altezza massima di sollevamento"
+" ) La velocità massima consentita",
+" ) L’area entro cui deve rimanere il baricentro per evitare ribaltamento",
+" ) L’angolo massimo di sterzata",
+" ) L’altezza massima di sollevamento"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1498,10 +1498,10 @@ suggestion: "Se il baricentro esce dal triangolo di stabilità il mezzo può rib
 id: 101,
 question: "Durante la marcia senza carico le forche devono essere:",
 options: [
-"A) Alte per migliorare visibilità",
-"B) Inclinate in avanti",
-"C) Basse (15-20 cm) e leggermente inclinate all’indietro",
-"D) Appoggiate completamente a terra"
+" ) Alte per migliorare visibilità",
+" ) Inclinate in avanti",
+" ) Basse (15-20 cm) e leggermente inclinate all’indietro",
+" ) Appoggiate completamente a terra"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -1513,10 +1513,10 @@ suggestion: "Forche basse riducono rischio urti e perdita stabilità."
 id: 102,
 question: "Il superamento della portata nominale comporta:",
 options: [
-"A) Solo maggiore consumo carburante",
-"B) Rischio di ribaltamento e cedimento strutturale",
-"C) Nessun effetto immediato",
-"D) Migliore stabilità"
+" ) Solo maggiore consumo carburante",
+" ) Rischio di ribaltamento e cedimento strutturale",
+" ) Nessun effetto immediato",
+" ) Migliore stabilità"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1528,10 +1528,10 @@ suggestion: "È vietato usare l’attrezzatura oltre i limiti previsti dal costr
 id: 103,
 question: "In presenza di pavimentazione sconnessa è corretto:",
 options: [
-"A) Aumentare velocità per superare ostacoli",
-"B) Procedere lentamente mantenendo carico basso",
-"C) Sollevare il carico per evitare urti",
-"D) Guidare in retromarcia costante"
+" ) Aumentare velocità per superare ostacoli",
+" ) Procedere lentamente mantenendo carico basso",
+" ) Sollevare il carico per evitare urti",
+" ) Guidare in retromarcia costante"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1543,10 +1543,10 @@ suggestion: "Velocità moderata riduce vibrazioni e instabilità."
 id: 104,
 question: "Il freno di stazionamento deve essere inserito:",
 options: [
-"A) Solo su pendenze elevate",
-"B) Solo a fine turno",
-"C) Ogni volta che si lascia il mezzo incustodito",
-"D) Solo in area esterna"
+" ) Solo su pendenze elevate",
+" ) Solo a fine turno",
+" ) Ogni volta che si lascia il mezzo incustodito",
+" ) Solo in area esterna"
 ],
 correct: 2,
 category: "sicurezza_operativa",
@@ -1558,10 +1558,10 @@ suggestion: "Il mezzo deve essere messo in sicurezza quando non presidiato."
 id: 105,
 question: "La valutazione del rischio interferenziale tra muletti e pedoni è contenuta nel:",
 options: [
-"A) Registro infortuni",
-"B) DVR aziendale",
-"C) Libro unico del lavoro",
-"D) Manuale del costruttore"
+" ) Registro infortuni",
+" ) DVR aziendale",
+" ) Libro unico del lavoro",
+" ) Manuale del costruttore"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1573,10 +1573,10 @@ suggestion: "Il DVR individua e valuta tutti i rischi presenti in azienda."
 id: 106,
 question: "Durante la sostituzione di bombola GPL è necessario:",
 options: [
-"A) Operare vicino a fonti di calore",
-"B) Verificare assenza fiamme e perdite",
-"C) Accendere il motore per test immediato",
-"D) Usare utensili improvvisati"
+" ) Operare vicino a fonti di calore",
+" ) Verificare assenza fiamme e perdite",
+" ) Accendere il motore per test immediato",
+" ) Usare utensili improvvisati"
 ],
 correct: 1,
 category: "emergenza_antincendio",
@@ -1588,10 +1588,10 @@ suggestion: "Il GPL comporta rischio incendio ed esplosione."
 id: 107,
 question: "Il mancato uso della cintura di sicurezza espone a:",
 options: [
-"A) Solo sanzione disciplinare interna",
-"B) Aumento rischio schiacciamento in caso di ribaltamento",
-"C) Migliore libertà di movimento",
-"D) Nessun rischio"
+" ) Solo sanzione disciplinare interna",
+" ) Aumento rischio schiacciamento in caso di ribaltamento",
+" ) Migliore libertà di movimento",
+" ) Nessun rischio"
 ],
 correct: 1,
 category: "DPI",
@@ -1603,10 +1603,10 @@ suggestion: "Il lavoratore deve utilizzare correttamente i DPI e dispositivi di 
 id: 108,
 question: "La revisione straordinaria del mezzo è richiesta quando:",
 options: [
-"A) Si cambia operatore",
-"B) Dopo evento anomalo o incidente significativo",
-"C) Ogni settimana",
-"D) Solo a fine anno"
+" ) Si cambia operatore",
+" ) Dopo evento anomalo o incidente significativo",
+" ) Ogni settimana",
+" ) Solo a fine anno"
 ],
 correct: 1,
 category: "manutenzione_controlli",
@@ -1618,10 +1618,10 @@ suggestion: "Eventi anomali richiedono verifica dell’idoneità all’uso."
 id: 109,
 question: "La formazione pratica deve essere effettuata:",
 options: [
-"A) Su simulatore esclusivamente",
-"B) Su mezzo reale della categoria prevista",
-"C) Solo con video dimostrativi",
-"D) Solo tramite affiancamento informale"
+" ) Su simulatore esclusivamente",
+" ) Su mezzo reale della categoria prevista",
+" ) Solo con video dimostrativi",
+" ) Solo tramite affiancamento informale"
 ],
 correct: 1,
 category: "formazione_abilitazione",
@@ -1633,10 +1633,10 @@ suggestion: "È prevista prova pratica su attrezzatura reale."
 id: 110,
 question: "In caso di urto accidentale contro scaffalatura è necessario:",
 options: [
-"A) Riprendere subito il lavoro",
-"B) Segnalare e verificare stabilità struttura prima di proseguire",
-"C) Spostare manualmente lo scaffale",
-"D) Ignorare se non vi sono danni visibili"
+" ) Riprendere subito il lavoro",
+" ) Segnalare e verificare stabilità struttura prima di proseguire",
+" ) Spostare manualmente lo scaffale",
+" ) Ignorare se non vi sono danni visibili"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1648,10 +1648,10 @@ suggestion: "Ogni anomalia strutturale deve essere segnalata."
 id: 111,
 question: "Il datore di lavoro deve aggiornare la valutazione dei rischi quando:",
 options: [
-"A) Cambia colore carrello",
-"B) Introduce nuove attrezzature o modifiche organizzative rilevanti",
-"C) Cambia turno operatore",
-"D) Viene assunto un lavoratore stagionale"
+" ) Cambia colore carrello",
+" ) Introduce nuove attrezzature o modifiche organizzative rilevanti",
+" ) Cambia turno operatore",
+" ) Viene assunto un lavoratore stagionale"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1663,10 +1663,10 @@ suggestion: "Il DVR va aggiornato in caso di modifiche significative."
 id: 112,
 question: "La mancata formazione specifica può comportare:",
 options: [
-"A) Solo richiamo verbale",
-"B) Responsabilità penale per il datore di lavoro in caso di infortunio",
-"C) Nessuna conseguenza",
-"D) Solo sanzione amministrativa al lavoratore"
+" ) Solo richiamo verbale",
+" ) Responsabilità penale per il datore di lavoro in caso di infortunio",
+" ) Nessuna conseguenza",
+" ) Solo sanzione amministrativa al lavoratore"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1678,10 +1678,10 @@ suggestion: "La formazione è obbligo giuridico del datore di lavoro."
 id: 113,
 question: "Il carrello elevatore rientra tra:",
 options: [
-"A) Dispositivi medici",
-"B) Attrezzature di lavoro",
-"C) DPI",
-"D) Impianti fissi"
+" ) Dispositivi medici",
+" ) Attrezzature di lavoro",
+" ) DPI",
+" ) Impianti fissi"
 ],
 correct: 1,
 category: "normativa_generale",
@@ -1693,10 +1693,10 @@ suggestion: "È definito attrezzatura di lavoro dal Testo Unico."
 id: 114,
 question: "L’operatore deve collaborare alla sicurezza:",
 options: [
-"A) Solo in presenza del preposto",
-"B) Sempre, rispettando procedure e istruzioni",
-"C) Solo in caso di emergenza",
-"D) Solo durante audit"
+" ) Solo in presenza del preposto",
+" ) Sempre, rispettando procedure e istruzioni",
+" ) Solo in caso di emergenza",
+" ) Solo durante audit"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1708,10 +1708,10 @@ suggestion: "Il lavoratore ha obblighi di cooperazione alla sicurezza."
 id: 115,
 question: "La guida con telefono cellulare in uso è:",
 options: [
-"A) Consentita se breve",
-"B) Vietata perché distrae e aumenta rischio infortunio",
-"C) Consentita con auricolare",
-"D) Consentita a bassa velocità"
+" ) Consentita se breve",
+" ) Vietata perché distrae e aumenta rischio infortunio",
+" ) Consentita con auricolare",
+" ) Consentita a bassa velocità"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1723,10 +1723,10 @@ suggestion: "Comportamenti imprudenti violano obblighi di sicurezza."
 id: 116,
 question: "L’illuminazione insufficiente dell’area di lavoro deve essere:",
 options: [
-"A) Ignorata",
-"B) Segnalata e corretta prima della movimentazione",
-"C) Compensata aumentando velocità",
-"D) Risolta con fari personali non autorizzati"
+" ) Ignorata",
+" ) Segnalata e corretta prima della movimentazione",
+" ) Compensata aumentando velocità",
+" ) Risolta con fari personali non autorizzati"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1738,10 +1738,10 @@ suggestion: "Gli ambienti di lavoro devono avere illuminazione adeguata."
 id: 117,
 question: "La verifica periodica delle competenze dell’operatore è:",
 options: [
-"A) Facoltativa",
-"B) Parte del sistema di gestione sicurezza aziendale",
-"C) Solo sindacale",
-"D) Prevista solo per neoassunti"
+" ) Facoltativa",
+" ) Parte del sistema di gestione sicurezza aziendale",
+" ) Solo sindacale",
+" ) Prevista solo per neoassunti"
 ],
 correct: 1,
 category: "formazione_abilitazione",
@@ -1753,10 +1753,10 @@ suggestion: "Il datore deve garantire adeguatezza nel tempo."
 id: 118,
 question: "La movimentazione in spazi ristretti richiede:",
 options: [
-"A) Velocità costante elevata",
-"B) Manovre lente e controllo continuo degli ingombri",
-"C) Forche alte",
-"D) Sterzate brusche"
+" ) Velocità costante elevata",
+" ) Manovre lente e controllo continuo degli ingombri",
+" ) Forche alte",
+" ) Sterzate brusche"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1768,10 +1768,10 @@ suggestion: "Ridurre velocità e controllare ingombri laterali."
 id: 119,
 question: "In caso di malfunzionamento dello sterzo è necessario:",
 options: [
-"A) Terminare il turno",
-"B) Mettere fuori servizio il mezzo e segnalarlo",
-"C) Ridurre solo velocità",
-"D) Compensare con freno"
+" ) Terminare il turno",
+" ) Mettere fuori servizio il mezzo e segnalarlo",
+" ) Ridurre solo velocità",
+" ) Compensare con freno"
 ],
 correct: 1,
 category: "manutenzione_controlli",
@@ -1783,10 +1783,10 @@ suggestion: "Attrezzature non sicure non devono essere utilizzate."
 id: 120,
 question: "Il rischio vibrazioni corpo intero è valutato ai sensi del:",
 options: [
-"A) Titolo I",
-"B) Titolo VIII D.Lgs. 81/2008",
-"C) Titolo X",
-"D) Titolo III solo"
+" ) Titolo I",
+" ) Titolo VIII D.Lgs. 81/2008",
+" ) Titolo X",
+" ) Titolo III solo"
 ],
 correct: 1,
 category: "salute_esposizione",
@@ -1798,10 +1798,10 @@ suggestion: "Il rischio vibrazioni rientra tra gli agenti fisici."
 id: 121,
 question: "L’operatore deve interrompere l’attività quando:",
 options: [
-"A) È stanco ma vuole terminare lavoro",
-"B) Ritiene sussista pericolo grave e immediato",
-"C) Il collega lo chiede",
-"D) Il turno è quasi finito"
+" ) È stanco ma vuole terminare lavoro",
+" ) Ritiene sussista pericolo grave e immediato",
+" ) Il collega lo chiede",
+" ) Il turno è quasi finito"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1813,10 +1813,10 @@ suggestion: "Il lavoratore può allontanarsi in caso di pericolo grave e immedia
 id: 122,
 question: "Il mancato rispetto delle procedure aziendali di sicurezza costituisce:",
 options: [
-"A) Solo infrazione amministrativa generica",
-"B) Violazione degli obblighi del lavoratore",
-"C) Nessuna violazione se non accade incidente",
-"D) Responsabilità esclusiva del RSPP"
+" ) Solo infrazione amministrativa generica",
+" ) Violazione degli obblighi del lavoratore",
+" ) Nessuna violazione se non accade incidente",
+" ) Responsabilità esclusiva del RSPP"
 ],
 correct: 1,
 category: "ruoli_responsabilita",
@@ -1828,10 +1828,10 @@ suggestion: "Le procedure sono parte integrante delle misure di prevenzione."
 id: 123,
 question: "L’uso di accessori non previsti dal costruttore comporta:",
 options: [
-"A) Miglioramento automatico prestazioni",
-"B) Alterazione caratteristiche sicurezza e necessità verifica tecnica",
-"C) Nessuna variazione",
-"D) Riduzione vibrazioni"
+" ) Miglioramento automatico prestazioni",
+" ) Alterazione caratteristiche sicurezza e necessità verifica tecnica",
+" ) Nessuna variazione",
+" ) Riduzione vibrazioni"
 ],
 correct: 1,
 category: "manutenzione_controlli",
@@ -1843,10 +1843,10 @@ suggestion: "Ogni modifica può incidere sulla sicurezza e portata."
 id: 124,
 question: "Il carrello elevatore può essere utilizzato per sollevare persone:",
 options: [
-"A) Sempre con pallet",
-"B) Solo con attrezzature certificate e procedure specifiche",
-"C) Mai in nessun caso",
-"D) Solo in emergenza"
+" ) Sempre con pallet",
+" ) Solo con attrezzature certificate e procedure specifiche",
+" ) Mai in nessun caso",
+" ) Solo in emergenza"
 ],
 correct: 1,
 category: "sicurezza_operativa",
@@ -1858,10 +1858,10 @@ suggestion: "Il sollevamento persone richiede dispositivi idonei e autorizzazion
 id: 125,
 question: "Il sistema di prevenzione aziendale deve garantire:",
 options: [
-"A) Solo formazione iniziale",
-"B) Miglioramento continuo delle condizioni di sicurezza",
-"C) Solo rispetto minimo legge",
-"D) Solo controlli ispettivi"
+" ) Solo formazione iniziale",
+" ) Miglioramento continuo delle condizioni di sicurezza",
+" ) Solo rispetto minimo legge",
+" ) Solo controlli ispettivi"
 ],
 correct: 1,
 category: "normativa_generale",
@@ -1973,7 +1973,7 @@ function showQuestion() {
         const optionDiv = document.createElement('div');
         optionDiv.className = 'option';
         optionDiv.textContent = option.text;
-        optionDiv.addEventListener('click', () => selectAnswer(option.originalIndex, randomized));
+        optionDiv.addEventListener('click', () => selectAnswer(option.originalIndex, randomize ));
         optionsContainer.appendChild(optionDiv);
     });
 }
@@ -2106,7 +2106,7 @@ function showReview() {
                 optDiv.classList.add('user-answer');
                 if (!answer.isCorrect) {
                     optDiv.classList.add('wrong');
-                    optDiv.textContent += ' ❌ (Tua risposta)';
+                    optDiv.textContent += ' ❌ (Tua rispost )';
                 } else {
                     optDiv.textContent += ' ✅ (Tua risposta - Corretta!)';
                 }
@@ -2115,7 +2115,7 @@ function showReview() {
             // Mostra risposta corretta se sbagliata
             if (!answer.isCorrect && idx === answer.correctIndex) {
                 optDiv.classList.add('correct-answer');
-                optDiv.textContent += ' ✅ (Risposta Corretta)';
+                optDiv.textContent += ' ✅ (Risposta Corrett )';
             }
             
             reviewItem.appendChild(optDiv);
