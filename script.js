@@ -1973,12 +1973,12 @@ function showQuestion() {
         const optionDiv = document.createElement('div');
         optionDiv.className = 'option';
         optionDiv.textContent = option.text;
-        optionDiv.addEventListener('click', () => selectAnswer(option.originalIndex, randomize ));
+        optionDiv.addEventListener('click', () => selectAnswer(option.originalIndex));
         optionsContainer.appendChild(optionDiv);
     });
 }
 
-function selectAnswer(selectedIndex, randomizedOptions) {
+function selectAnswer(selectedIndex) {
     const question = currentQuestions[currentQuestionIndex];
     
     // Salva risposta
