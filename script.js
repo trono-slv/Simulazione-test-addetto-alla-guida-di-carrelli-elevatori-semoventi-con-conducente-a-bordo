@@ -1,1554 +1,1873 @@
 // PANIERE DOMANDE
 // ============================================
 const QUESTION_BANK = [
-    {
-        id: 1,
-        question: "Secondo il D.Lgs. 81/2008, chi può condurre un carrello elevatore?",
-        options: [
-            "A) Qualsiasi lavoratore presente in magazzino",
-            "B) Solo operatori formati e autorizzati specificamente",
-            "C) Chiunque abbia la patente di guida B",
-            "D) Solo dipendenti con anzianità superiore a 2 anni"
-        ],
-        correct: 1,
-        category: "normativa",
-        ref: "Art. 73 D.Lgs 81/2008",
-        suggestion: "L'Art. 73 del D.Lgs 81/2008 stabilisce l'obbligo di formazione specifica per gli addetti alla conduzione di attrezzature di lavoro. L'Accordo Stato-Regioni del 22/02/2012 definisce i requisiti minimi: 12 ore totali di formazione (8 ore teoria + 4 ore pratica), con verifica finale e attestato di abilitazione."
-    },
-    {
-        id: 2,
-        question: "Prima di iniziare il turno di lavoro con il carrello, l'operatore deve:",
-        options: [
-            "A) Verificare solo il livello del carburante",
-            "B) Effettuare un controllo visivo completo (freni, sterzo, forche, luci)",
-            "C) Controllare esclusivamente la pressione delle gomme",
-            "D) Non è necessario alcun controllo preliminare"
-        ],
-        correct: 1,
-        category: "sicurezza",
-        ref: "Art. 71 D.Lgs 81/2008",
-        suggestion: "Il controllo giornaliero del carrello è un obbligo previsto dal D.Lgs 81/2008. Prima dell'uso, l'operatore deve verificare: efficienza dei freni, sterzo, clacson, luci di segnalazione, stato delle forche, livello fluidi e assenza di perdite. Eventuali anomalie vanno segnalate immediatamente e il mezzo non deve essere utilizzato fino alla riparazione."
-    },
-    {
-        id: 3,
-        question: "La capacità di carico nominale del carrello è indicata:",
-        options: [
-            "A) Nella targa identificativa del costruttore",
-            "B) Nel libretto di istruzioni, ma non sul mezzo",
-            "C) Solo nel contratto di acquisto",
-            "D) Non è obbligatorio indicarla"
-        ],
-        correct: 0,
-        category: "tecnica",
-        ref: "D.Lgs 17/2010 - Direttiva Macchine",
-        suggestion: "La targa identificativa (o diagramma di carico) deve essere permanentemente fissata sul carrello in posizione ben visibile. Indica la portata massima in relazione alla distanza del baricentro del carico e all'altezza di sollevamento. Superare i limiti indicati può causare ribaltamento del mezzo e gravi infortuni."
-    },
-    {
-        id: 4,
-        question: "Durante la marcia con carico, le forche devono essere:",
-        options: [
-            "A) Sempre sollevate alla massima altezza per migliore visibilità",
-            "B) Mantenute basse (15-20 cm da terra) e inclinate leggermente indietro",
-            "C) Parallele al terreno a qualsiasi altezza",
-            "D) Sollevate solo quando si attraversano aree di lavoro"
-        ],
-        correct: 1,
-        category: "tecnica",
-        ref: "Norme UNI ISO 3691",
-        suggestion: "Le forche vanno mantenute basse (15-20 cm dal suolo) per abbassare il baricentro e aumentare la stabilità del mezzo. L'inclinazione leggermente indietro evita lo scivolamento del carico durante il trasporto. La velocità deve essere ridotta in presenza di curve, passaggi stretti o pavimentazioni irregolari."
-    },
-    {
-        id: 5,
-        question: "L'abilitazione alla conduzione di carrelli elevatori ha validità:",
-        options: [
-            "A) Illimitata, senza necessità di aggiornamento",
-            "B) 5 anni, con obbligo di aggiornamento quinquennale (4 ore)",
-            "C) 3 anni, con corso completo da ripetere",
-            "D) 10 anni, solo per carrelli diesel"
-        ],
-        correct: 1,
-        category: "normativa",
-        ref: "Accordo Stato-Regioni 22/02/2012",
-        suggestion: "L'Accordo Stato-Regioni del 22/02/2012 prevede l'aggiornamento obbligatorio ogni 5 anni con un corso di almeno 4 ore. L'aggiornamento copre: novità normative, evoluzioni tecniche delle attrezzature, analisi di infortuni, buone pratiche di sicurezza. La mancata partecipazione comporta la decadenza dell'abilitazione."
-    },
-      {
-    id: 1,
-    question: "Secondo D.Lgs 81/2008 Titolo III Capo I, le attrezzature di lavoro devono essere:",
-    options: [
-      "A) Solo nuove",
-      "B) Idonee alla salute/sicurezza e adeguate al lavoro",
-      "C) Sempre noleggiate",
-      "D) Senza marcatura CE"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 70 D.Lgs 81/2008",
-    suggestion: "Attenzione: l’Art. 70 disciplina soprattutto la conformità alle direttive di prodotto (es. marcatura CE) o, per attrezzature ante-direttive, ai requisiti dell’Allegato V. Il concetto di attrezzatura “idonea e adeguata al lavoro” è richiamato in modo esplicito anche dagli obblighi del datore di lavoro (Art. 71), che deve scegliere e mettere a disposizione attrezzature adatte e sicure."
-  },
-  {
-    id: 2,
-    question: "L'art.71 D.Lgs 81/2008 stabilisce che il datore di lavoro deve:",
-    options: [
-      "A) Solo acquistare attrezzature",
-      "B) Assicurare idoneità e adeguatezza attrezzature",
-      "C) Delegare tutto al RSPP",
-      "D) Non fare verifiche"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 71 D.Lgs 81/2008",
-    suggestion: "L’Art. 71 impone al datore di lavoro di mettere a disposizione attrezzature conformi e adeguate, installate/impiegate secondo istruzioni, mantenute in efficienza e gestite con misure tecniche-organizzative (anche richiamate dall’Allegato VI). La responsabilità resta in capo al datore di lavoro anche se attività operative vengono affidate a soggetti incaricati."
-  },
-  {
-    id: 3,
-    question: "Per carrelli ante-Direttiva Macchine (pre-1996), si applicano i requisiti dell':",
-    options: [
-      "A) Solo libretto uso",
-      "B) Allegato V D.Lgs 81/2008",
-      "C) DPR 547/1955",
-      "D) Nessuna norma"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 70 c.2 + Allegato V D.Lgs 81/2008",
-    suggestion: "Per attrezzature costruite/messa a disposizione prima delle norme di recepimento delle direttive di prodotto, il riferimento è l’Art. 70 comma 2: devono rispettare i requisiti generali di sicurezza dell’Allegato V. In pratica, vanno verificati e (se necessario) adeguati ripari, comandi, segnalazioni, stabilità e dispositivi di sicurezza."
-  },
-  {
-    id: 4,
-    question: "L'art.73 c.5 D.Lgs 81/2008 richiede per carrelli elevatori:",
-    options: [
-      "A) Solo formazione generica",
-      "B) Abilitazione specifica (Accordo 22/02/2012)",
-      "C) Nessuna abilitazione",
-      "D) Solo addestramento pratico"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 73 c.5 D.Lgs 81/2008",
-    suggestion: "L’Art. 73 comma 5 prevede che alcune attrezzature (tra cui i carrelli elevatori) richiedano una specifica abilitazione definita tramite Accordo in Conferenza Stato‑Regioni. Nota: dal 24/05/2025 è in vigore l’Accordo Stato‑Regioni 17/04/2025 (Rep. 59/CSR), che aggiorna e unifica anche questi percorsi."
-  },
-  {
-    id: 5,
-    question: "I noleggiatori devono attestare conformità ai requisiti di:",
-    options: [
-      "A) Solo CE",
-      "B) Allegato V D.Lgs 81/2008 al momento consegna",
-      "C) Solo portata",
-      "D) Nessun obbligo"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 72 D.Lgs 81/2008",
-    suggestion: "Chi vende/noleggia/concede in uso macchine “fuori” dal perimetro dell’Art. 70 comma 1 deve attestare, sotto responsabilità, la conformità all’Allegato V al momento della consegna. Se il noleggio/concessione è senza operatore, deve anche attestare buono stato e acquisire la dichiarazione del datore di lavoro sugli incaricati formati/abilitati."
-  },
-  {
-    id: 6,
-    question: "Le macchine CE devono essere utilizzate:",
-    options: [
-      "A) Senza verifiche",
-      "B) Nei limiti del libretto uso e Allegato VI",
-      "C) Sempre con modifiche",
-      "D) Solo da esperti"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 71 + Allegato VI D.Lgs 81/2008",
-    suggestion: "Anche con marcatura CE, l’attrezzatura va usata secondo le istruzioni del fabbricante e con regole operative che riducano i rischi (Allegato VI: spazi, viabilità, uso corretto, divieti di impieghi impropri, ecc.). La CE non sostituisce manutenzione, controlli e formazione degli operatori."
-  },
-  {
-    id: 7,
-    question: "La verifica periodica carrelli è disciplinata dall':",
-    options: [
-      "A) Solo manuale uso",
-      "B) Allegato VII D.Lgs 81/2008",
-      "C) Nessuna verifica",
-      "D) Circolare Ministeriale"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Allegato VII D.Lgs 81/2008 + DM 11/04/2011",
-    suggestion: "Le verifiche periodiche riguardano le attrezzature elencate nell’Allegato VII e sono attuate secondo le modalità del DM 11/04/2011. Non tutti i carrelli elevatori “standard” rientrano sempre nell’Allegato VII: dipende dalla tipologia (es. alcune attrezzature di sollevamento specifiche sì)."
-  },
-  {
-    id: 8,
-    question: "Il venditore di carrelli deve fornire attestazione:",
-    options: [
-      "A) Solo fattura",
-      "B) Conformità Allegato V D.Lgs 81/2008",
-      "C) Solo CE",
-      "D) Nessun documento"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 72 D.Lgs 81/2008",
-    suggestion: "L’obbligo di attestazione dell’Allegato V (Art. 72) si applica quando l’attrezzatura è stata costruita/messa in servizio al di fuori della disciplina dell’Art. 70 comma 1. Se invece è una macchina soggetta a direttive di prodotto, i documenti tipici sono dichiarazione di conformità, manuale, marcatura CE e istruzioni d’uso."
-  },
-  {
-    id: 11,
-    question: "Il Datore di Lavoro verifica per macchine CE:",
-    options: [
-      "A) Solo marcatura",
-      "B) Assenza vizi palesi + uso conforme",
-      "C) Solo dichiarazione",
-      "D) Nessuna verifica"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 71 D.Lgs 81/2008",
-    suggestion: "La verifica non si limita alla marcatura CE: il datore di lavoro deve valutare idoneità rispetto al lavoro, garantire installazione/uso secondo istruzioni, manutenzione e controlli nel tempo. È buona prassi verificare anche aspetti evidenti (integrità, dispositivi, segnalazioni, manuale presente e comprensibile) prima della messa in servizio."
-  },
-  {
-    id: 14,
-    question: "Aggiornamento abilitazione carrelli deve avvenire ogni:",
-    options: [
-      "A) 1 anno",
-      "B) 5 anni (Accordo Stato-Regioni)",
-      "C) 10 anni",
-      "D) Mai"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Accordi Stato‑Regioni ex Art. 73 c.5",
-    suggestion: "Gli Accordi in Conferenza Stato‑Regioni che regolano l’abilitazione ex Art. 73 c.5 prevedono anche una periodicità di aggiornamento (storicamente quinquennale). Verifica sempre il percorso applicabile secondo l’Accordo vigente (17/04/2025) e le eventuali disposizioni transitorie previste dal testo."
-  },
-  {
-    id: 15,
-    question: "Responsabile manutenzione attrezzature:",
-    options: [
-      "A) Solo RSPP",
-      "B) Datore di lavoro art.71",
-      "C) Solo manutentore",
-      "D) Lavoratore"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Art. 71 D.Lgs 81/2008",
-    suggestion: "La manutenzione e il mantenimento dei requisiti di sicurezza sono un obbligo del datore di lavoro. Può incaricare personale interno/esterno e organizzare registri e controlli, ma la responsabilità di assicurare che l’attrezzatura resti sicura nel tempo resta in capo a lui."
-  },
-  {
-    id: 16,
-    question: "Denuncia INAIL obbligatoria quando carrello usato come:",
-    options: [
-      "A) Sempre",
-      "B) Gru/cestello porta persone",
-      "C) Solo per noleggio",
-      "D) Mai"
-    ],
-    correct: 1,
-    category: "giuridico",
-    ref: "Buone prassi / Verifiche Allegato VII",
-    suggestion: "Quando un carrello viene impiegato (o trasformato con accessori) per funzioni assimilabili a sollevamento persone o specifiche tipologie di sollevamento rientranti in Allegato VII, entrano in gioco obblighi di richiesta/verifiche periodiche secondo Art. 71 e DM 11/04/2011. In questi casi è essenziale verificare che l’uso sia previsto/ammesso dal fabbricante e gestire correttamente gli adempimenti verso INAIL (es. prima verifica periodica) quando applicabili."
-  },
 {
-    id: 21,
-    question: "Secondo l’Allegato V (Parte II, punto 2.5), i carrelli elevatori devono limitare i rischi di:",
-    options: ["A) Solo ribaltamento", "B) Contatto con ruote/cingoli e ribaltamento", "C) Solo ostacoli", "D) Vibrazioni"],
-    correct: 1,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato V, Parte II, punto 2.5"
-  },
-  {
-    id: 22,
-    question: "Per proteggere il conducente dal rischio di ribaltamento, è necessaria:",
-    options: ["A) Solo cinture", "B) Una struttura che garantisca uno spazio di sicurezza tra suolo e carrello", "C) Paraurti", "D) Tettuccio opzionale"],
-    correct: 1,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato V, Parte II, punto 2.5"
-  },
-  {
-    id: 23,
-    question: "I carrelli elevatori devono essere dotati di un dispositivo per:",
-    options: ["A) Solo acceleratore", "B) Evitare la messa in moto non autorizzata", "C) Solo clacson", "D) Luci"],
-    correct: 1,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato V, Parte II, punto 2.6"
-  },
-  
-  {
-    id: 32,
-    question: "Le parti in movimento alla portata dell’operatore devono essere:",
-    options: ["A) Protette contro il rischio di cesoiamento", "B) Lasciate libere", "C) Solo segnalate", "D) Opzionali"],
-    correct: 0,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato V (punto da specificare)"
-  },
-  
-  {
-    id: 34,
-    question: "I segnali relativi alle manovre devono essere:",
-    options: ["A) Opzionali", "B) Chiaramente leggibili e corredati da avvisi", "C) Solo verbali", "D) Non necessari"],
-    correct: 1,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato V, punto 3.1.15"
-  },
-  {
-    id: 35,
-    question: "La stabilità dell’attrezzatura durante l’impiego deve essere:",
-    options: ["A) Garantita in tutte le condizioni prevedibili", "B) Garantita solo su piano", "C) Opzionale", "D) Garantita solo a pieno carico"],
-    correct: 0,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato VI"
-  },
-  {
-    id: 36,
-    question: "Il sollevamento di persone è consentito solo mediante:",
-    options: ["A) Qualsiasi carrello", "B) Attrezzature/accessori specificamente previsti per tale uso", "C) Sempre vietato", "D) Solo muletti"],
-    correct: 1,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato VI"
-  },
-  
-  {
-    id: 38,
-    question: "L’abitacolo (o postazione di guida) del carrello deve garantire al conducente una protezione:",
-    options: ["A) Adeguata", "B) Opzionale", "C) Solo cinture", "D) Solo tettuccio"],
-    correct: 0,
-    category: "tecnico",
-    ref: "Normativa (da specificare: fonte/parte/punto)"
-  },
-  
-{
-    id: 41,
-    question: "Gli organi di comando devono impedire:",
-    options: ["A) Messa in moto accidentale", "B) Solo uso non autorizzato", "C) Entrambi A+B", "D) Nessuno"],
-    correct: 2,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato V, punto 3.1.14"
-  },
-  {
-    id: 42,
-    question: "Nei carrelli con conducente a bordo, il rischio di ribaltamento deve essere limitato mediante:",
-    options: ["A) Solo con cabina", "B) Cabina o protezioni equivalenti", "C) Nessuna protezione", "D) Solo velocità ridotta"],
-    correct: 1,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato V (punto da specificare/da confermare)"
-  },
+id: 1,
+question: "Quale articolo del D.Lgs. 81/2008 disciplina l'obbligo di formazione per gli addetti alla conduzione di attrezzature di lavoro?",
+options: [
+"A) Art. 18",
+"B) Art. 37",
+"C) Art. 71",
+"D) Art. 73"
+],
+correct: 3,
+category: "normativa",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "L’Art. 73 impone formazione, informazione e addestramento specifico per gli operatori che utilizzano attrezzature che richiedono competenze particolari."
+},
 
-  {
-    id: 51,
-    question: "Le protezioni contro il rischio di cesoiamento devono riguardare:",
-    options: ["A) Parti movimento", "B) Solo pulegge", "C) Solo catene", "D) Nessuna"],
-    correct: 0,
-    category: "tecnico",
-    ref: "Normativa (da specificare: Allegato V o altra fonte)"
-  },
-  
-  {
-    id: 54,
-    question: "Il sollevamento di persone è consentito solo mediante:",
-    options: ["A) Solo attrezzature specifiche", "B) Tutti carrelli", "C) Vietato sempre", "D) Solo muletti"],
-    correct: 0,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato VI"
-  },
-  {
-    id: 55,
-    question: "La scelta delle attrezzature deve tenere conto di:",
-    options: ["A) Natura carichi/condizioni", "B) Solo portata", "C) Solo altezza", "D) Solo marca"],
-    correct: 0,
-    category: "tecnico",
-    ref: "D.Lgs. 81/2008, Allegato VI"
-  },
-  
-  {
-    id: 61,
-    question: "Prima dell’uso dell’attrezzatura, è necessario verificare:",
-    options: ["A) Solo carburante", "B) Assenza di vizi palesi (D.Lgs. 81/2008)", "C) Solo luci", "D) Colore"],
-    correct: 1,
-    category: "pratico",
-    ref: "D.Lgs. 81/2008, art. 71 (da confermare comma)"
-  },
-  
-  {
-    id: 64,
-    question: "La responsabilità della manutenzione periodica delle attrezzature ricade su:",
-    options: ["A) Datore di lavoro (art. 71)", "B) Solo RSPP", "C) Solo manutentore", "D) Lavoratore"],
-    correct: 0,
-    category: "pratico",
-    ref: "D.Lgs. 81/2008, art. 71"
-  },
-  {
-    id: 65,
-    question: "Per i carrelli elevatori antecedenti al 1996 è opportuno effettuare verifiche aggiuntive perché:",
-    options: ["A) Mancano requisiti moderni", "B) Sono troppo veloci", "C) Consumano troppo", "D) Hanno colore diverso"],
-    correct: 0,
-    category: "pratico",
-    ref: "Buone prassi (da specificare: ente/documento)"
-  },
-  {
-    id: 66,
-    question: "Un addetto formato/abilitato deve conoscere:",
-    options: ["A) Solo guida", "B) I rischi specifici dell’attrezzatura (art. 73)", "C) Solo manutenzione", "D) Programmazione"],
-    correct: 1,
-    category: "pratico",
-    ref: "D.Lgs. 81/2008, art. 73"
-  },
-  {
-    id: 67,
-    question: "La valutazione dei rischi per l’uso dei carrelli dovrebbe includere:",
-    options: ["A) Solo ribaltamento", "B) Tutte le fasi di impiego", "C) Solo carico", "D) Solo pedoni"],
-    correct: 1,
-    category: "pratico",
-    ref: "Buone prassi"
-  },
-  {
-    id: 68,
-    question: "Se un carrello viene utilizzato come gru o come cestello porta persone, in pratica:",
-    options: ["A) Diventa assimilabile a gru: possibile denuncia/obblighi INAIL", "B) Nessun problema", "C) Solo se >3t", "D) Sempre vietato"],
-    correct: 0,
-    category: "pratico",
-    ref: "Buone prassi "
-  },
-  {
-    id: 69,
-    question: "Il controllo visivo giornaliero dovrebbe includere:",
-    options: ["A) Solo gomme", "B) Anomalie generali di funzionamento", "C) Solo portata", "D) Solo forche"],
-    correct: 1,
-    category: "pratico",
-    ref: "Buone prassi"
-  },
-  {
-    id: 70,
-    question: "In prossimità di zone pedonali, il carrello elevatore deve:",
-    options: ["A) Ridurre velocità", "B) Sempre precedere pedoni", "C) Nessuna regola", "D) Suonare sempre"],
-    correct: 0,
-    category: "pratico",
-    ref: "Buone prassi"
-  },
-  {
-    id: 71,
-    question: "In presenza di un carico instabile, il comportamento corretto è:",
-    options: ["A) Sollevare comunque", "B) Non trasportare e segnalare", "C) Aumentare velocità", "D) Ridurre portata"],
-    correct: 1,
-    category: "pratico",
-    ref: "Buone prassi "
-  },
-  {
-    id: 72,
-    question: "In sosta, il carrello va lasciato in sicurezza con:",
-    options: ["A) Forche a terra, freno inserito, chiave rimossa", "B) Forche alzate", "C) Su pendenza", "D) Motore acceso"],
-    correct: 0,
-    category: "pratico",
-    ref: "Buone prassi"
-  },
-  {
-    id: 73,
-    question: "Per superare ostacoli bassi o passaggi critici, è buona regola:",
-    options: ["A) Abbassare le forche", "B) Alzare il carico", "C) Accelerare", "D) Suonare"],
-    correct: 0,
-    category: "pratico",
-    ref: "Pratiche sicure"
-  },
-  {
-    id: 1,
-    question: "Qual è la funzione principale di un carrello elevatore?",
-    options: ["A) Trasportare persone tra i piani", "B) Sollevare, trasportare e deporre carichi su pallet", "C) Spostare solo carichi leggeri a mano", "D) Pulire i pavimenti dei magazzini"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Brixia / Orion SRL",
-    suggestion: "Il carrello elevatore è una macchina progettata per sollevare, trasportare, deporre e immagazzinare carichi su pallet. È lo strumento più diffuso per la movimentazione interna nei magazzini."
-  },
-  {
-    id: 2,
-    question: "Quale dispositivo deve essere presente sul carrello per proteggere dalle cadute di materiale dall’alto?",
-    options: ["A) Solo la cintura di sicurezza", "B) Tetto o griglia di protezione", "C) Solo i fari di lavoro", "D) Solo il sedile antivibrazione"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Circolare Ministero Industria 7808/2001",
-    suggestion: "Il tetto o griglia di protezione è una misura primaria obbligatoria. La dimensione delle maglie deve essere adeguata al tipo di materiale trasportato (maglie strette per bulloni o piccoli pezzi)."
-  },
-  {
-    id: 3,
-    question: "In caso di rovesciamento accidentale, quale parte del corpo è prioritaria da proteggere?",
-    options: ["A) Le gambe", "B) La testa", "C) Le braccia", "D) La schiena"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Circolare 7808/2001",
-    suggestion: "In caso di ribaltamento la testa è la parte più esposta a lesioni gravi. Per questo sono obbligatori il tetto di protezione, le cinture di sicurezza e il casco."
-  },
-  {
-    id: 4,
-    question: "Per il transpallet manuale è obbligatoria la formazione specifica?",
-    options: ["A) Sì, identica a quella del carrello elevatore", "B) No, ma è necessario informare l’operatore sui rischi", "C) Solo se si superano i 500 kg", "D) Solo se il pavimento è bagnato"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Regolamento CE 684/2008",
-    suggestion: "Il transpallet manuale non richiede la formazione specifica obbligatoria per i carrelli elevatori perché non ha congegni elettrici, ma è obbligatorio informare l’operatore sui rischi (sterzate brusche, velocità a passo d’uomo, pavimentazione, ecc.)."
-  },
-  {
-    id: 5,
-    question: "Quale DPI è obbligatorio indossare sempre alla guida del carrello elevatore?",
-    options: ["A) Solo gli occhiali da sole", "B) Casco, scarpe antinfortunistiche, guanti e gilet ad alta visibilità", "C) Solo il grembiule", "D) Solo la maschera antipolvere"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "DPI e Circolare 7808/2001",
-    suggestion: "L’operatore deve indossare sempre casco, scarpe di sicurezza, guanti e abbigliamento ad alta visibilità per tutelarsi da schiacciamenti, cadute di oggetti e scarsa visibilità."
-  },
-  {
-    id: 6,
-    question: "È consentito trasportare persone sulle forche del carrello?",
-    options: ["A) Sì, solo se sono colleghi fidati", "B) No, salvo casi eccezionali con apposita cesta omologata", "C) Sì, purché si vada a passo d’uomo", "D) Solo durante le pause"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Norme di sicurezza carrelli",
-    suggestion: "Il carrello elevatore non nasce per il trasporto persone. Solo in casi eccezionali è ammesso l’uso di ceste omologate con fermi anti-sfilata, chiusura interna e punto di ancoraggio per cintura anticaduta."
-  },
-  {
-    id: 7,
-    question: "Quale è la posizione corretta delle forche durante la marcia normale?",
-    options: ["A) Sollevate al massimo per vedere meglio", "B) Abbassate a 15-20 cm da terra e inclinate leggermente all’indietro", "C) Completamente abbassate a terra", "D) Sollevate a 1 metro per evitare ostacoli"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Orion SRL e Sapienza",
-    suggestion: "Durante la marcia le forche devono essere tenute basse (15-20 cm) e inclinate all’indietro per mantenere il baricentro del carico il più vicino possibile al carrello e aumentare la stabilità."
-  },
-  {
-    id: 8,
-    question: "Chi è responsabile della corretta manutenzione giornaliera del carrello?",
-    options: ["A) Solo il manutentore esterno", "B) L’operatore che lo utilizza", "C) Solo il datore di lavoro", "D) Solo il responsabile del magazzino"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Brixia e Dispensa corso",
-    suggestion: "L’operatore è responsabile dei controlli visivi e funzionali giornalieri (livelli, freni, catene, ruote, dispositivi di sicurezza) prima di iniziare il turno."
-  },
-  {
-    id: 9,
-    question: "Quale azione è vietata durante la ricarica delle batterie di un carrello elettrico?",
-    options: ["A) Indossare i guanti", "B) Fumare o usare fiamme libere nelle vicinanze", "C) Aprire il cofano", "D) Collegare il caricabatterie"],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Circolare 7808/2001",
-    suggestion: "Durante la ricarica delle batterie è vietato fumare o usare fiamme libere perché i gas prodotti possono essere esplosivi."
-  },
-  {
-    id: 10,
-    question: "Il carrello elevatore può essere utilizzato solo se:",
-    options: ["A) È in qualsiasi condizione purché funzioni", "B) È in buono stato, pulito e con tutti i dispositivi di sicurezza funzionanti", "C) Ha solo il motore acceso", "D) È stato usato il giorno prima"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Brixia",
-    suggestion: "Il carrello deve essere in buono stato di conservazione e tutti i dispositivi di sicurezza devono essere funzionanti prima di ogni utilizzo."
-  },
-  {
-    id: 11,
-    question: "Quale è il segnale acustico da usare quando si effettua una retromarcia?",
-    options: ["A) Nessun segnale", "B) Il clacson o il segnalatore acustico di retromarcia", "C) Solo le luci lampeggianti", "D) Solo la voce"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Norme di sicurezza carrelli",
-    suggestion: "Il segnalatore acustico di retromarcia deve essere sempre attivato quando si marcia all’indietro per avvisare pedoni e altri mezzi."
-  },
-  {
-    id: 12,
-    question: "Quando si deve indossare la cintura di sicurezza?",
-    options: ["A) Solo in salita", "B) Sempre, durante tutta la guida", "C) Solo quando si trasportano carichi pesanti", "D) Solo in curva"],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Circolare 7808/2001",
-    suggestion: "La cintura di sicurezza (o sistema di ritenuta) deve essere indossata sempre durante la guida per evitare di essere schiacciati in caso di ribaltamento."
-  },
-  {
-    id: 13,
-    question: "Quale è la velocità massima consentita nei corridoi stretti?",
-    options: ["A) Quella indicata dal costruttore e comunque “a passo d’uomo”", "B) 30 km/h", "C) Quella che si preferisce", "D) Solo in retromarcia"],
-    correct: 0,
-    category: "tecnica_base",
-    ref: "Manuale Orion SRL",
-    suggestion: "Nei corridoi stretti la velocità deve essere ridotta a “passo d’uomo” e comunque non superiore a quella indicata dal costruttore."
-  },
-  {
-    id: 14,
-    question: "È consentito frenare bruscamente con il carico sollevato?",
-    options: ["A) Sì, per fermarsi prima", "B) No, aumenta il rischio di ribaltamento", "C) Solo se il carico è sotto i 200 kg", "D) Solo in retromarcia"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Sapienza",
-    suggestion: "La frenata brusca con carico alto sposta il baricentro in avanti e può causare il ribaltamento del carrello."
-  },
-  {
-    id: 15,
-    question: "Dove va posizionato il carico sulle forche per garantire stabilità?",
-    options: ["A) Il più possibile in avanti", "B) Il più vicino possibile al montante e centrato", "C) Solo sulla punta delle forche", "D) Solo sulla forca di destra"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Orion SRL",
-    suggestion: "Il carico deve essere posizionato il più vicino possibile al montante e ben centrato sulle forche per mantenere il baricentro nella zona di stabilità."
-  },
-  {
-    id: 16,
-    question: "Quale è l’altezza massima consigliata delle forche durante la marcia?",
-    options: ["A) 2 metri", "B) 15-20 cm da terra", "C) Altezza del sedile", "D) 50 cm"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Sapienza",
-    suggestion: "Durante la marcia le forche devono essere tenute a 15-20 cm da terra per mantenere basso il baricentro e aumentare la stabilità trasversale."
-  },
-  {
-    id: 17,
-    question: "Chi deve verificare che il carrello sia idoneo prima di ogni turno?",
-    options: ["A) Solo il capo reparto", "B) L’operatore stesso (controlli visivi e funzionali)", "C) Solo il manutentore", "D) Nessuno"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Brixia",
-    suggestion: "L’operatore deve effettuare i controlli preliminari ogni giorno prima di iniziare il servizio."
-  },
-  {
-    id: 18,
-    question: "È obbligatorio segnalare la presenza del carrello nei passaggi?",
-    options: ["A) No", "B) Sì, con segnalatore acustico e/o cartelli", "C) Solo di notte", "D) Solo se ci sono pedoni"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Dispensa corso carrellisti",
-    suggestion: "Il passaggio dei carrelli deve essere segnalato con il segnalatore acustico e con cartelli in loco."
-  },
-  {
-    id: 19,
-    question: "Quale azione è vietata con il carrello in movimento?",
-    options: ["A) Regolare lo specchietto", "B) Trasportare persone sulla piattaforma o sulle forche", "C) Accendere la radio", "D) Bere acqua"],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Norme di sicurezza",
-    suggestion: "È assolutamente vietato trasportare persone sulle forche o sulla piattaforma del carrello."
-  },
-  {
-    id: 20,
-    question: "Cosa fare prima di scendere dal carrello?",
-    options: ["A) Lasciare il motore acceso", "B) Inserire il freno a mano, abbassare le forche e spegnere il motore", "C) Lasciare le forche sollevate", "D) Solo spegnere i fari"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Brixia",
-    suggestion: "Prima di scendere bisogna sempre inserire il freno a mano, abbassare completamente le forche a terra e togliere la chiave."
-  },
-  {
-    id: 21,
-    question: "Quale DPI è obbligatorio quando si ricaricano batterie al piombo?",
-    options: ["A) Solo il casco", "B) Guanti isolanti e occhiali di protezione", "C) Solo le scarpe antinfortunistiche", "D) Solo il gilet"],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Circolare 7808/2001",
-    suggestion: "Durante la ricarica delle batterie al piombo è obbligatorio indossare guanti isolanti e occhiali di protezione per evitare schizzi di acido."
-  },
-  {
-    id: 22,
-    question: "Il carrello può essere lasciato in pendenza senza freno a mano?",
-    options: ["A) Sì, se è scarico", "B) No, mai", "C) Solo per pochi minuti", "D) Solo se è elettrico"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Orion SRL",
-    suggestion: "Il carrello non deve mai essere lasciato in pendenza senza freno a mano inserito."
-  },
-  {
-    id: 23,
-    question: "Quale è il comportamento corretto in curva?",
-    options: ["A) Accelerare", "B) Ridurre la velocità e mantenere le forche basse", "C) Sterzare bruscamente", "D) Suonare il clacson continuamente"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Sapienza",
-    suggestion: "In curva bisogna ridurre la velocità e tenere le forche basse per contrastare la forza centrifuga e prevenire il ribaltamento trasversale."
-  },
-  {
-    id: 24,
-    question: "È consentito usare il carrello per spingere altri veicoli?",
-    options: ["A) Sì, se sono più leggeri", "B) No", "C) Solo in emergenza", "D) Solo se il capo lo autorizza"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Norme di sicurezza",
-    suggestion: "Il carrello elevatore non deve mai essere usato per spingere o trainare altri veicoli."
-  },
-  {
-    id: 25,
-    question: "Cosa deve fare l’operatore alla fine del turno?",
-    options: ["A) Lasciare il carrello ovunque", "B) Parcheggiarlo in zona sicura, con forche abbassate, freno inserito e chiave tolta", "C) Lasciare il motore acceso", "D) Solo abbassare le forche"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Brixia",
-    suggestion: "Alla fine del turno il carrello deve essere parcheggiato in zona sicura, forche abbassate a terra, freno a mano inserito e chiave tolta."
-  },
-  {
-    id: 26,
-    question: "Dove si trova il baricentro di un carico uniforme su pallet?",
-    options: ["A) Sulla punta delle forche", "B) Al centro geometrico del carico", "C) Sul montante", "D) Sulle ruote anteriori"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Orion SRL",
-    suggestion: "Nel carico uniforme il baricentro si trova al centro geometrico del pallet."
-  },
-  {
-    id: 27,
-    question: "Cosa aumenta il rischio di ribaltamento longitudinale?",
-    options: ["A) Carico vicino al montante", "B) Carico troppo in avanti rispetto al punto di ribaltamento", "C) Forche basse", "D) Inclinazione all’indietro"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Sapienza",
-    suggestion: "Il carico troppo in avanti rispetto al punto di ribaltamento aumenta il momento ribaltante e può causare il rovesciamento longitudinale."
-  },
-  {
-    id: 28,
-    question: "In discesa con carico, quale marcia è più sicura?",
-    options: ["A) Marcia avanti", "B) Marcia indietro", "C) Neutro", "D) Qualsiasi"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Orion SRL",
-    suggestion: "In discesa con carico è più sicuro procedere in retromarcia perché il carico rimane nella zona di stabilità del carrello."
-  },
-  {
-    id: 29,
-    question: "Cosa provoca la forza centrifuga in curva?",
-    options: ["A) Aumenta la stabilità", "B) Può causare ribaltamento trasversale se si curva troppo velocemente", "C) Riduce il consumo di carburante", "D) Migliora la visibilità"],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Sapienza",
-    suggestion: "La forza centrifuga in curva può far uscire il baricentro dalla base di appoggio e causare il ribaltamento trasversale."
-  },
-  {
-    id: 30,
-    question: "Quale è la corretta inclinazione dei montanti durante il prelievo da catasta?",
-    options: ["A) Inclinati in avanti al massimo", "B) Verticali o leggermente inclinati all’indietro", "C) Completamente inclinati indietro", "D) Nessuna inclinazione"],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Orion SRL",
-    suggestion: "Durante il prelievo da catasta i montanti devono essere verticali o leggermente inclinati all’indietro per evitare di spingere la catasta."
-  },
-  {
-    id: 31,
-    question: "Quando si deposita un carico in catasta, come si deve procedere?",
-    options: [
-      "A) Lasciarlo cadere da 50 cm",
-      "B) Appoggiarlo gradualmente senza urti laterali",
-      "C) Spingerlo con forza",
-      "D) Solo inclinare le forche"
-    ],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Dispensa corso carrellisti - Orion SRL",
-    suggestion: "Il carico deve essere depositato gradualmente e senza urti laterali per evitare che la catasta diventi instabile o crolli."
-  },
-  {
-    id: 32,
-    question: "Cosa succede se si frena bruscamente con il carico alto?",
-    options: [
-      "A) Il carrello si ferma meglio",
-      "B) Il carico può scivolare in avanti e causare ribaltamento",
-      "C) Non succede nulla",
-      "D) Migliora la stabilità"
-    ],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Orion SRL - Effetto frenata",
-    suggestion: "La frenata brusca con carico sollevato sposta violentemente il baricentro in avanti, aumentando enormemente il rischio di ribaltamento longitudinale."
-  },
-  {
-    id: 33,
-    question: "Quale controllo deve essere fatto ogni giorno sulle catene del montante?",
-    options: [
-      "A) Solo la lubrificazione",
-      "B) Verifica di usura, tensioni e assenza di rotture",
-      "C) Solo la pulizia",
-      "D) Nessun controllo"
-    ],
-    correct: 1,
-    category: "manutenzione",
-    ref: "Manuale Brixia e Orion SRL",
-    suggestion: "Le catene del montante devono essere controllate quotidianamente per verificare usura, tensioni e assenza di maglie rotte o deformate."
-  },
-  {
-    id: 34,
-    question: "Quando si usa il traslatore laterale, la velocità deve essere:",
-    options: [
-      "A) Massima",
-      "B) Ridotta",
-      "C) Uguale alla marcia normale",
-      "D) Zero"
-    ],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Dispensa corso carrellisti",
-    suggestion: "Con attrezzature supplementari come il traslatore laterale la velocità deve essere sempre ridotta per mantenere il controllo del carico."
-  },
-  {
-    id: 35,
-    question: "Quale è il rischio principale quando si circola in retromarcia?",
-    options: [
-      "A) Perdita di visibilità anteriore",
-      "B) Nessuno",
-      "C) Consumo maggiore",
-      "D) Solo rumore"
-    ],
-    correct: 0,
-    category: "sicurezza",
-    ref: "Manuale Sapienza",
-    suggestion: "In retromarcia la visibilità anteriore è fortemente ridotta: è obbligatorio usare il segnalatore acustico e procedere lentamente."
-  },
-  {
-    id: 36,
-    question: "Come si verifica la portata massima del carrello?",
-    options: [
-      "A) Dalla targhetta del costruttore",
-      "B) Dal peso del carico a occhio",
-      "C) Dal libretto di circolazione",
-      "D) Dal colore del carrello"
-    ],
-    correct: 0,
-    category: "stabilità",
-    ref: "Manuale Orion SRL - Targhetta di portata",
-    suggestion: "La portata massima è indicata sulla targhetta del costruttore applicata sul carrello: deve essere sempre rispettata in base alla distanza del baricentro."
-  },
-  {
-    id: 37,
-    question: "Cosa fare se durante la marcia si avverte vibrazione anomala?",
-    options: [
-      "A) Continuare",
-      "B) Fermarsi immediatamente, abbassare il carico e segnalare",
-      "C) Accelerare",
-      "D) Solo rallentare"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Brixia",
-    suggestion: "Qualsiasi vibrazione anomala è un segnale di possibile guasto: bisogna fermarsi subito, abbassare il carico e avvisare il responsabile."
-  },
-  {
-    id: 38,
-    question: "Quale è la corretta procedura per salire sul carrello?",
-    options: [
-      "A) Saltare dentro",
-      "B) Usare il gradino antisdrucciolo e tenersi al maniglione",
-      "C) Entrare dal lato sinistro",
-      "D) Solo da dietro"
-    ],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Orion SRL",
-    suggestion: "Bisogna sempre usare il gradino antisdrucciolo e tenersi saldamente al maniglione per evitare cadute durante la salita."
-  },
-  {
-    id: 39,
-    question: "Quando si deve usare la retromarcia?",
-    options: [
-      "A) Sempre",
-      "B) Quando il carico ostacola la visibilità in avanti",
-      "C) Solo in salita",
-      "D) Solo di notte"
-    ],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Dispensa corso carrellisti",
-    suggestion: "La retromarcia deve essere usata quando il carico impedisce la visibilità anteriore, sempre con il segnalatore acustico attivo."
-  },
-  {
-    id: 40,
-    question: "Cosa indica la lettera “Q” sulla targhetta di portata?",
-    options: [
-      "A) La velocità massima",
-      "B) La portata nominale del carrello",
-      "C) Il numero di serie",
-      "D) La data di fabbricazione"
-    ],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Orion SRL",
-    suggestion: "La lettera “Q” indica la portata nominale (capacità di sollevamento) del carrello in kg."
-  },
-  {
-    id: 41,
-    question: "In caso di pendenza, come si deve posizionare il carico?",
-    options: [
-      "A) Sollevato alto",
-      "B) Basso e inclinato all’indietro",
-      "C) In avanti",
-      "D) Laterale"
-    ],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Sapienza - Effetto pendenza",
-    suggestion: "Su qualsiasi pendenza il carico deve essere tenuto basso (15-20 cm) e inclinato all’indietro per mantenere la stabilità."
-  },
-  {
-    id: 42,
-    question: "Quale è l’effetto di un carico decentrato lateralmente?",
-    options: [
-      "A) Migliora la stabilità",
-      "B) Riduce la stabilità trasversale e aumenta il rischio di ribaltamento",
-      "C) Non ha effetto",
-      "D) Aumenta la velocità"
-    ],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Orion SRL",
-    suggestion: "Un carico decentrato lateralmente riduce drasticamente la stabilità trasversale e può causare ribaltamento in curva."
-  },
-  {
-    id: 43,
-    question: "Cosa fare prima di iniziare a sollevare un carico?",
-    options: [
-      "A) Verificare che il peso sia entro la portata indicata sulla targhetta",
-      "B) Sollevare subito",
-      "C) Chiedere al collega",
-      "D) Solo suonare il clacson"
-    ],
-    correct: 0,
-    category: "stabilità",
-    ref: "Manuale Brixia",
-    suggestion: "Prima di sollevare qualsiasi carico bisogna sempre controllare sulla targhetta che il peso sia compatibile con la distanza del baricentro."
-  },
-  {
-    id: 44,
-    question: "Quale è la corretta sequenza per depositare un carico su scaffale alto?",
-    options: [
-      "A) Avvicinarsi, inclinare in avanti, depositare",
-      "B) Avvicinarsi con montanti verticali, depositare gradualmente, ritirare le forche",
-      "C) Inclinare indietro prima",
-      "D) Usare solo la retromarcia"
-    ],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Orion SRL",
-    suggestion: "Per depositare su scaffale alto: avvicinarsi con montanti verticali, depositare gradualmente e ritirare le forche solo quando il carico è stabile."
-  },
-  {
-    id: 45,
-    question: "Quando è obbligatorio usare un segnalatore a terra?",
-    options: [
-      "A) Sempre",
-      "B) Quando il carico ostacola completamente la visibilità",
-      "C) Solo in curva",
-      "D) Solo di sabato"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Dispensa corso carrellisti",
-    suggestion: "Quando il carico impedisce totalmente la visibilità anteriore è obbligatorio avere un segnalatore a terra che guidi l’operatore."
-  },
-  {
-    id: 46,
-    question: "Quale manutenzione deve essere fatta dall’operatore ogni giorno?",
-    options: [
-      "A) Solo lavare il carrello",
-      "B) Controllo livello olio, acqua batteria, freni, ruote, catene, dispositivi di sicurezza",
-      "C) Solo cambiare le gomme",
-      "D) Solo pulire il sedile"
-    ],
-    correct: 1,
-    category: "manutenzione",
-    ref: "Manuale Brixia",
-    suggestion: "L’operatore deve controllare ogni giorno: livelli olio/acqua batteria, efficienza freni, stato ruote, catene e tutti i dispositivi di sicurezza."
-  },
-  {
-    id: 47,
-    question: "Cosa succede se si circola con le forche sollevate oltre i 30 cm?",
-    options: [
-      "A) Migliora la visibilità",
-      "B) Si riduce la stabilità e aumenta il rischio di ribaltamento",
-      "C) Non succede nulla",
-      "D) Si risparmia carburante"
-    ],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Sapienza",
-    suggestion: "Circolare con forche alte sposta in alto il baricentro e riduce notevolmente la stabilità trasversale e longitudinale."
-  },
-  {
-    id: 48,
-    question: "Quale è il rischio maggiore quando si usa un posizionatore forche?",
-    options: [
-      "A) Aumento della portata",
-      "B) Possibile spostamento laterale del carico se non usato correttamente",
-      "C) Riduzione del rumore",
-      "D) Miglioramento della velocità"
-    ],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Dispensa corso carrellisti",
-    suggestion: "Con il posizionatore forche il carico può spostarsi lateralmente se l’operatore non lo controlla correttamente: velocità ridotta e movimenti lenti."
-  },
-  {
-    id: 49,
-    question: "Come si deve parcheggiare il carrello alla fine del turno in pendenza?",
-    options: [
-      "A) Con le ruote dritte e freno a mano inserito",
-      "B) Con le ruote sterzate verso il bordo e freno inserito",
-      "C) Senza freno",
-      "D) Con le forche sollevate"
-    ],
-    correct: 1,
-    category: "tecnica_base",
-    ref: "Manuale Orion SRL",
-    suggestion: "In pendenza le ruote devono essere sterzate verso il bordo o il marciapiede e il freno a mano deve essere sempre inserito."
-  },
-  {
-    id: 50,
-    question: "L’operatore deve segnalare immediatamente al responsabile se:",
-    options: [
-      "A) Il carrello ha un difetto di sicurezza o un’anomalia",
-      "B) Ha finito la benzina",
-      "C) Ha fame",
-      "D) Il collega è in ritardo"
-    ],
-    correct: 0,
-    category: "sicurezza",
-    ref: "Manuale Brixia",
-    suggestion: "Qualsiasi difetto di sicurezza o anomalia deve essere segnalato immediatamente al responsabile prima di continuare a usare il mezzo."
-  },
-  {
-    id: 51,
-    question: "Se durante la marcia il carico inizia a scivolare in avanti, cosa deve fare subito l’operatore?",
-    options: [
-      "A) Accelerare per “tenere” il carico",
-      "B) Fermarsi dolcemente, abbassare completamente le forche e riposizionare il carico",
-      "C) Inclinare i montanti ancora di più all’indietro",
-      "D) Continuare la marcia normalmente"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Sapienza",
-    suggestion: "Se il carico scivola bisogna fermarsi immediatamente, abbassare le forche a terra e riposizionarlo correttamente prima di ripartire."
-  },
-  {
-    id: 52,
-    question: "Per evitare di rimanere schiacciati tra il carrello e un pilastro o scaffale:",
-    options: [
-      "A) Procedere rasente al muro",
-      "B) Mantenere sempre una distanza di sicurezza minima e controllare con gli specchietti",
-      "C) Guidare solo in retromarcia",
-      "D) Ignorare gli ostacoli bassi"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Circolare 7808/2001",
-    suggestion: "Mantenere sempre una distanza di sicurezza laterale e controllare costantemente con gli specchietti per evitare schiacciamenti."
-  },
-  {
-    id: 53,
-    question: "Un pedone attraversa improvvisamente il corridoio davanti al carrello:",
-    options: [
-      "A) Suonare il clacson e proseguire",
-      "B) Fermarsi immediatamente e aspettare che il pedone abbia attraversato completamente",
-      "C) Sterzare bruscamente a destra",
-      "D) Accelerare per superarlo prima"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Brixia",
-    suggestion: "La priorità assoluta è la sicurezza delle persone: fermarsi subito e attendere che il pedone abbia finito di attraversare."
-  },
-  {
-    id: 54,
-    question: "In caso di rischio imminente di ribaltamento laterale in curva, l’azione che salva la vita è:",
-    options: [
-      "A) Saltare fuori dal carrello",
-      "B) Rimanere seduto con cintura allacciata, braccia e gambe dentro la cabina",
-      "C) Aprire la porta e sporgersi",
-      "D) Alzare le forche al massimo"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Circolare 7808/2001",
-    suggestion: "In caso di ribaltamento bisogna rimanere seduti con cintura allacciata e tenere braccia e gambe all’interno della cabina protetta."
-  },
-  {
-    id: 55,
-    question: "Se il carrello inizia a inclinarsi lateralmente mentre si curva con carico:",
-    options: [
-      "A) Accelerare per stabilizzarlo",
-      "B) Rallentare subito, raddrizzare il volante e abbassare le forche a 15-20 cm",
-      "C) Continuare la curva normalmente",
-      "D) Inclinare i montanti in avanti"
-    ],
-    correct: 1,
-    category: "stabilità",
-    ref: "Manuale Orion SRL",
-    suggestion: "In caso di inizio di ribaltamento laterale: rallentare, raddrizzare il volante e abbassare immediatamente le forche."
-  },
-  {
-    id: 56,
-    question: "Per prevenire la caduta di materiale dall’alto durante il sollevamento:",
-    options: [
-      "A) Sollevare il più velocemente possibile",
-      "B) Verificare sempre il tetto/griglia di protezione e non superare la portata",
-      "C) Non indossare il casco",
-      "D) Sollevare solo di notte"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Circolare 7808/2001",
-    suggestion: "Tetto/griglia di protezione funzionante + carico entro portata + casco sono le tre misure fondamentali contro le cadute di materiale."
-  },
-  {
-    id: 57,
-    question: "Le forche non rispondono più ai comandi durante un sollevamento:",
-    options: [
-      "A) Continuare a premere la leva",
-      "B) Fermare il carrello, abbassare manualmente se possibile e segnalare immediatamente il guasto",
-      "C) Colpire le forche con un attrezzo",
-      "D) Usare solo la retromarcia"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Brixia",
-    suggestion: "In caso di mancato funzionamento delle forche bisogna fermarsi subito, abbassare il carico manualmente se possibile e segnalare il guasto."
-  },
-  {
-    id: 58,
-    question: "In un incrocio tra corridoi con altro carrello:",
-    options: [
-      "A) Procedere senza guardare",
-      "B) Rallentare, usare il clacson, rispettare i segnali di precedenza",
-      "C) Accelerare per passare per primo",
-      "D) Chiudere gli occhi e sperare"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Dispensa corso carrellisti",
-    suggestion: "Negli incroci tra corridoi è obbligatorio rallentare, usare il clacson e rispettare le regole di precedenza."
-  },
-  {
-    id: 59,
-    question: "Si avverte odore di bruciato o si vede fumo dal carrello:",
-    options: [
-      "A) Continuare il lavoro",
-      "B) Fermarsi subito in zona sicura, spegnere il motore, allontanarsi e avvisare",
-      "C) Aprire subito il cofano",
-      "D) Versare acqua sul motore"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Brixia",
-    suggestion: "Odore di bruciato o fumo = possibile incendio: fermarsi immediatamente in zona sicura, spegnere il motore e allontanarsi."
-  },
-  {
-    id: 60,
-    question: "La catasta da cui si deve prelevare sembra instabile:",
-    options: [
-      "A) Tirare il carico con forza",
-      "B) Avvicinarsi lentamente, verificare la stabilità prima di inserire le forche",
-      "C) Sollevare da 2 metri di distanza",
-      "D) Usare solo una forca"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Orion SRL",
-    suggestion: "Se la catasta appare instabile bisogna fermarsi e verificare attentamente prima di inserire le forche: meglio chiedere aiuto che rischiare un crollo."
-  },
-  {
-    id: 61,
-    question: "Un collega è a terra vicino al carrello dopo un incidente:",
-    options: [
-      "A) Continuare il proprio lavoro",
-      "B) Fermare il carrello in sicurezza, prestare i primi soccorsi se si è formati e chiamare aiuto",
-      "C) Muovere il ferito con le forche",
-      "D) Ignorare la situazione"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Brixia e Dispensa corso",
-    suggestion: "In caso di infortunio fermare immediatamente il mezzo in sicurezza, prestare i primi soccorsi solo se si è formati e chiamare subito aiuto."
-  },
-  {
-    id: 62,
-    question: "Visibilità ridotta per polvere o penombra nel magazzino:",
-    options: [
-      "A) Aumentare la velocità",
-      "B) Accendere tutti i fari di lavoro, ridurre la velocità e usare il segnalatore acustico",
-      "C) Non accendere le luci",
-      "D) Guidare solo di giorno"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Orion SRL",
-    suggestion: "In condizioni di scarsa visibilità è obbligatorio accendere i fari di lavoro, ridurre drasticamente la velocità e usare continuamente il segnalatore acustico."
-  },
-  {
-    id: 63,
-    question: "È assolutamente vietato fumare:",
-    options: [
-      "A) Solo vicino ai carrelli diesel",
-      "B) Nell’area di ricarica batterie o di rifornimento GPL/carburante",
-      "C) Solo dentro la cabina",
-      "D) Non è mai vietato"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Circolare 7808/2001 e Regolamento CE 684/2008",
-    suggestion: "È vietato fumare o usare fiamme libere nelle zone di ricarica batterie e rifornimento carburante/GPL per il rischio di esplosione."
-  },
-  {
-    id: 64,
-    question: "Si sente forte odore di gas durante il rifornimento GPL:",
-    options: [
-      "A) Accendere una fiamma per controllare",
-      "B) Chiudere subito la valvola, ventilare la zona e non usare interruttori elettrici",
-      "C) Continuare il rifornimento",
-      "D) Chiamare dopo il turno"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Brixia",
-    suggestion: "In caso di perdita di gas chiudere immediatamente la valvola, ventilare e non azionare nessun interruttore elettrico per evitare scintille."
-  },
-  {
-    id: 65,
-    question: "L’estintore sul carrello deve essere:",
-    options: [
-      "A) Solo nel vano motore",
-      "B) Fissato in posizione facilmente raggiungibile dall’operatore",
-      "C) Sotto il sedile",
-      "D) Non è obbligatorio"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Norme di sicurezza carrelli",
-    suggestion: "L’estintore deve essere fissato in posizione facilmente accessibile dall’operatore seduto alla guida."
-  },
-  {
-    id: 66,
-    question: "Durante la ricarica delle batterie al piombo è obbligatorio:",
-    options: [
-      "A) Chiudere tutte le porte della zona",
-      "B) Garantire ventilazione adeguata e vietare fiamme libere",
-      "C) Caricare con il motore del carrello acceso",
-      "D) Usare acqua per raffreddare le batterie"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Circolare 7808/2001",
-    suggestion: "Durante la ricarica è obbligatoria una buona ventilazione della zona e il divieto assoluto di fiamme libere a causa dei gas esplosivi prodotti."
-  },
-  {
-    id: 67,
-    question: "Principio di incendio su carrello endotermico o GPL:",
-    options: [
-      "A) Spegnere con acqua",
-      "B) Usare estintore polvere ABC o CO₂ e allontanarsi",
-      "C) Spegnere con le mani",
-      "D) Continuare a lavorare"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Brixia",
-    suggestion: "Per incendi su carrelli con motore endotermico o GPL usare estintore polvere ABC o CO₂ e allontanarsi immediatamente."
-  },
-  {
-    id: 68,
-    question: "Il caricabatterie deve essere collegato:",
-    options: [
-      "A) A una presa qualsiasi",
-      "B) Solo a prese con interruttore differenziale e in zona ben ventilata",
-      "C) Senza protezione",
-      "D) Lasciato incustodito"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Dispensa corso carrellisti",
-    suggestion: "Il caricabatterie deve essere collegato solo a prese protette da interruttore differenziale e in zona ben ventilata."
-  },
-  {
-    id: 69,
-    question: "Per evitare incendi da surriscaldamento dei freni in discesa:",
-    options: [
-      "A) Frenare continuamente",
-      "B) Usare il freno motore e frenate brevi e intervallate",
-      "C) Non usare mai i freni",
-      "D) Solo in salita"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Orion SRL",
-    suggestion: "In discesa utilizzare il freno motore e fare frenate brevi e intervallate per evitare il surriscaldamento dei freni."
-  },
-  {
-    id: 70,
-    question: "Dopo aver spento un incendio sul carrello:",
-    options: [
-      "A) Riprendere subito il lavoro",
-      "B) Non utilizzare più il mezzo fino a verifica e autorizzazione del manutentore",
-      "C) Solo pulire la zona",
-      "D) Ignorare l’accaduto"
-    ],
-    correct: 1,
-    category: "sicurezza",
-    ref: "Manuale Brixia",
-    suggestion: "Dopo un incendio il carrello non deve più essere utilizzato fino a verifica completa e autorizzazione del manutentore."
-  },
-  {
-    id: 71,
-    question: "Per ridurre al minimo le vibrazioni trasmesse al corpo intero:",
-    options: [
-      "A) Guidare sempre con forche alte",
-      "B) Tenere forche basse (15-20 cm), velocità moderata, sedile antivibrazione ben regolato e evitare buche",
-      "C) Stare in piedi sul carrello",
-      "D) Non fare mai pause"
-    ],
-    correct: 1,
-    category: "salute",
-    ref: "Manuale Sapienza - Vibrazioni",
-    suggestion: "Tenere le forche basse, velocità moderata, sedile regolato e evitare pavimentazioni irregolari riduce le vibrazioni al corpo intero."
-  },
-  {
-    id: 72,
-    question: "Per prevenire mal di schiena e dolori cervicali da guida prolungata:",
-    options: [
-      "A) Non regolare mai il sedile",
-      "B) Regolare altezza sedile, distanza pedali e supporto lombare prima di ogni turno",
-      "C) Guidare sempre curvo in avanti",
-      "D) Cambiare posizione ogni ora senza fermare il carrello"
-    ],
-    correct: 1,
-    category: "salute",
-    ref: "Manuale Orion SRL",
-    suggestion: "Regolare correttamente il sedile (altezza, distanza pedali e supporto lombare) prima di ogni turno previene mal di schiena e problemi cervicali."
-  },
-  {
-    id: 73,
-    question: "L’esposizione a gas di scarico (monossido di carbonio e NOx) si riduce notevolmente:",
-    options: [
-      "A) Usando carrelli endotermici in ambienti chiusi senza ricambio aria",
-      "B) Preferendo carrelli elettrici in ambienti chiusi o garantendo forte ventilazione con endotermici",
-      "C) Accelerando sempre al massimo",
-      "D) Non usando il filtro antigas"
-    ],
-    correct: 1,
-    category: "salute",
-    ref: "Manuale Brixia",
-    suggestion: "Nei locali chiusi è fortemente consigliato l’uso di carrelli elettrici o, in alternativa, garantire un’elevata ventilazione con carrelli endotermici."
-  },
-  {
-    id: 74,
-    question: "Per evitare problemi alle mani e ai polsi (vibrazioni mano-braccio dai comandi):",
-    options: [
-      "A) Stringere il volante e le leve con forza",
-      "B) Usare guanti antivibrazione e mantenere una presa rilassata",
-      "C) Guidare senza guanti",
-      "D) Usare solo una mano"
-    ],
-    correct: 1,
-    category: "salute",
-    ref: "Manuale Sapienza",
-    suggestion: "Usare guanti antivibrazione e mantenere una presa rilassata riduce il rischio di disturbi vascolari e neurologici alle mani e ai polsi."
-  },
-  {
-    id: 75,
-    question: "Per prevenire affaticamento visivo, mal di testa e calo di attenzione durante turni lunghi:",
-    options: [
-      "A) Non pulire mai il parabrezza",
-      "B) Fare pause regolari ogni 2 ore, mantenere puliti specchietti e parabrezza e assicurare buona illuminazione",
-      "C) Guidare con gli occhi socchiusi",
-      "D) Aumentare la velocità per finire prima"
-    ],
-    correct: 1,
-    category: "salute",
-    ref: "Manuale Orion SRL",
-    suggestion: "Fare pause regolari ogni 2 ore, tenere puliti parabrezza e specchietti e assicurare buona illuminazione riduce l’affaticamento visivo e il calo di attenzione."
-  },
-  {
-    id: 76,
-    question: "Secondo le norme vigenti, chi deve provvedere affinché l’operatore riceva formazione e addestramento specifico prima di guidare un muletto?",
-    options: [
-      "A) Solo l’operatore stesso",
-      "B) Il datore di lavoro",
-      "C) Solo il collega più anziano",
-      "D) L’ufficio acquisti"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "D.Lgs. 81/2008",
-    suggestion: "Il datore di lavoro ha l’obbligo di garantire che ogni operatore riceva formazione e addestramento specifico prima di utilizzare il carrello elevatore."
-  },
-  {
-    id: 77,
-    question: "La patente di guida B (automobile) è sufficiente per guidare un carrello elevatore in azienda?",
-    options: [
-      "A) Sì, sempre",
-      "B) No, serve l’abilitazione specifica per carrelli elevatori",
-      "C) Solo se il muletto è elettrico",
-      "D) Solo per muletto di piccola portata"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "La patente B non è sufficiente: è obbligatoria l’abilitazione specifica (patentino) per carrelli elevatori."
-  },
-  {
-    id: 78,
-    question: "Quanto tempo è valida l’abilitazione (patentino) per la guida dei carrelli elevatori?",
-    options: [
-      "A) 1 anno",
-      "B) 5 anni",
-      "C) 10 anni",
-      "D) Per sempre"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "L’abilitazione ha validità di 5 anni. Dopo 5 anni è obbligatorio frequentare un corso di aggiornamento."
-  },
-  {
-    id: 79,
-    question: "Dopo quanto tempo dall’abilitazione l’operatore deve frequentare un corso di aggiornamento?",
-    options: [
-      "A) Dopo 2 anni",
-      "B) Ogni 5 anni",
-      "C) Solo se cambia azienda",
-      "D) Mai"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "L’aggiornamento è obbligatorio ogni 5 anni per mantenere valida l’abilitazione."
-  },
-  {
-    id: 80,
-    question: "Chi è responsabile della verifica che l’operatore abbia l’abilitazione valida prima di assegnargli il muletto?",
-    options: [
-      "A) Solo l’operatore",
-      "B) Il datore di lavoro o il preposto",
-      "C) Solo il manutentore",
-      "D) L’ispettore del lavoro"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "D.Lgs. 81/2008",
-    suggestion: "Il datore di lavoro e il preposto devono verificare che l’operatore sia in possesso di abilitazione valida prima di affidargli il mezzo."
-  },
-  {
-    id: 81,
-    question: "L’operatore può guidare un muletto senza aver mai ricevuto formazione specifica?",
-    options: [
-      "A) Sì, se ha esperienza",
-      "B) No, è obbligatoria la formazione e l’addestramento",
-      "C) Solo se il muletto è manuale",
-      "D) Solo per brevi spostamenti"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "D.Lgs. 81/2008 Art. 73",
-    suggestion: "È vietato far utilizzare il carrello elevatore a personale non formato e non abilitato."
-  },
-  {
-    id: 82,
-    question: "In caso di infortunio grave con il muletto, chi può essere chiamato a rispondere penalmente se non ha fornito formazione?",
-    options: [
-      "A) Solo l’operatore",
-      "B) Il datore di lavoro",
-      "C) Solo il collega",
-      "D) Nessuno"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "D.Lgs. 81/2008",
-    suggestion: "Il datore di lavoro può essere chiamato a rispondere penalmente se non ha provveduto alla formazione obbligatoria dell’operatore."
-  },
-  {
-    id: 83,
-    question: "L’operatore deve consegnare il patentino al datore di lavoro?",
-    options: [
-      "A) No, lo tiene solo lui",
-      "B) Sì, deve essere verificato e conservato in azienda",
-      "C) Solo se lo chiede il collega",
-      "D) Solo alla fine del turno"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "L’abilitazione deve essere verificata e conservata in copia in azienda dal datore di lavoro."
-  },
-  {
-    id: 84,
-    question: "La formazione per carrellisti può essere fatta solo online senza parte pratica?",
-    options: [
-      "A) Sì, è sufficiente",
-      "B) No, deve comprendere sia teoria che pratica su mezzo reale",
-      "C) Solo per i muletto elettrici",
-      "D) Solo se si è già esperti"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "La formazione deve essere di 12 ore totali (8 teoria + 4 pratica su mezzo reale) con verifica finale."
-  },
-  {
-    id: 85,
-    question: "Chi deve firmare il verbale di formazione e addestramento dell’operatore?",
-    options: [
-      "A) Solo l’operatore",
-      "B) L’operatore e il docente/formatori",
-      "C) Solo il datore di lavoro",
-      "D) Solo il sindacato"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "Il verbale deve essere firmato sia dall’operatore che dal docente/formatore."
-  },
-  {
-    id: 86,
-    question: "L’operatore può rifiutarsi di guidare un muletto se non ha ricevuto la formazione?",
-    options: [
-      "A) No, deve obbedire",
-      "B) Sì, è un suo diritto e dovere",
-      "C) Solo se è stanco",
-      "D) Solo se il muletto è vecchio"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "D.Lgs. 81/2008",
-    suggestion: "L’operatore ha il diritto e il dovere di rifiutarsi di guidare il muletto se non ha ricevuto la formazione specifica."
-  },
-  {
-    id: 87,
-    question: "Il patentino per muletto è nominativo e personale: può essere prestato a un collega?",
-    options: [
-      "A) Sì, per una giornata",
-      "B) No, è strettamente personale",
-      "C) Solo se il collega ha la stessa taglia",
-      "D) Solo in emergenza"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "L’abilitazione è strettamente personale e nominativa: non può essere prestata o utilizzata da altri."
-  },
-  {
-    id: 88,
-    question: "Il datore di lavoro deve tenere aggiornati i registri delle abilitazioni dei carrellisti?",
-    options: [
-      "A) No",
-      "B) Sì, è un obbligo",
-      "C) Solo per i muletto nuovi",
-      "D) Solo su richiesta dell’ispettore"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "D.Lgs. 81/2008",
-    suggestion: "Il datore di lavoro deve conservare e aggiornare i registri delle abilitazioni di tutti i carrellisti."
-  },
-  {
-    id: 89,
-    question: "Se l’operatore cambia mansione e non usa più il muletto, l’abilitazione scade?",
-    options: [
-      "A) Sì, immediatamente",
-      "B) No, rimane valida 5 anni",
-      "C) Scade dopo 1 anno",
-      "D) Solo se cambia azienda"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "L’abilitazione rimane valida 5 anni anche se l’operatore non usa più il muletto."
-  },
-  {
-    id: 90,
-    question: "Prima di iniziare a lavorare con un muletto nuovo o diverso da quello abituale, cosa deve ricevere l’operatore?",
-    options: [
-      "A) Solo le chiavi",
-      "B) Informazione e addestramento specifico sul nuovo mezzo",
-      "C) Solo il manuale in inglese",
-      "D) Niente"
-    ],
-    correct: 1,
-    category: "normativa",
-    ref: "Accordo Stato-Regioni 22/02/2012",
-    suggestion: "Prima di usare un carrello diverso è obbligatorio ricevere informazione e addestramento specifico sul nuovo mezzo."
-  }
+{
+id: 2,
+question: "Quale disposizione prevede l'abilitazione specifica per la conduzione dei carrelli elevatori?",
+options: [
+"A) Art. 36 D.Lgs. 81/2008",
+"B) Art. 73 comma 5 D.Lgs. 81/2008",
+"C) Art. 18 D.Lgs. 81/2008",
+"D) Allegato IV"
+],
+correct: 1,
+category: "normativa",
+ref: "Art. 73 c.5 D.Lgs. 81/2008; Accordo Stato-Regioni 22/02/2012",
+suggestion: "L’abilitazione è disciplinata dall’Art. 73 c.5 e regolamentata nei contenuti e durata dall’Accordo Stato-Regioni del 22/02/2012."
+},
+
+{
+id: 3,
+question: "Qual è la durata minima del corso di abilitazione per carrelli industriali semoventi?",
+options: [
+"A) 8 ore",
+"B) 10 ore",
+"C) 12 ore",
+"D) 16 ore"
+],
+correct: 2,
+category: "normativa",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "La durata minima prevista è 12 ore comprensive di modulo teorico e pratico con verifica finale."
+},
+
+{
+id: 4,
+question: "Quale attrezzatura NON richiede abilitazione specifica ai sensi dell’Art. 73 comma 5?",
+options: [
+"A) Carrello elevatore",
+"B) Gru a torre",
+"C) Piattaforma elevabile",
+"D) Transpallet manuale"
+],
+correct: 3,
+category: "normativa",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "Il transpallet manuale non rientra tra le attrezzature per cui è richiesta abilitazione obbligatoria."
+},
+
+{
+id: 5,
+question: "Chi deve garantire che il carrello elevatore sia mantenuto in condizioni di sicurezza?",
+options: [
+"A) L’operatore",
+"B) Il datore di lavoro",
+"C) Il RLS",
+"D) Il preposto"
+],
+correct: 1,
+category: "responsabilità",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Il datore di lavoro deve assicurare manutenzione, controlli periodici e conformità delle attrezzature."
+},
+
+{
+id: 6,
+question: "Quale principio tecnico determina la stabilità di un carrello elevatore?",
+options: [
+"A) Il colore del mezzo",
+"B) Il triangolo di stabilità",
+"C) Il tipo di carburante",
+"D) Il numero di fari"
+],
+correct: 1,
+category: "stabilità",
+ref: "-",
+suggestion: "La stabilità dipende dal triangolo formato dai punti di appoggio e dalla posizione del baricentro."
+},
+
+{
+id: 7,
+question: "Qual è una causa frequente di ribaltamento laterale?",
+options: [
+"A) Curva affrontata ad alta velocità",
+"B) Uso del lampeggiante",
+"C) Carico leggero",
+"D) Motore acceso al minimo"
+],
+correct: 0,
+category: "stabilità",
+ref: "-",
+suggestion: "L’eccessiva velocità in curva può spostare il baricentro fuori dal triangolo di stabilità."
+},
+
+{
+id: 8,
+question: "La cintura di sicurezza, se presente sul carrello, deve essere:",
+options: [
+"A) Utilizzata sempre",
+"B) Usata solo su richiesta",
+"C) Rimossa",
+"D) Facoltativa"
+],
+correct: 0,
+category: "sicurezza_operativa",
+ref: "Art. 77 D.Lgs. 81/2008",
+suggestion: "I dispositivi di ritenuta devono essere utilizzati secondo le indicazioni del fabbricante e del DVR."
+},
+
+{
+id: 9,
+question: "Prima dell’utilizzo del carrello l’operatore deve:",
+options: [
+"A) Iniziare immediatamente il lavoro",
+"B) Effettuare controlli visivi e funzionali",
+"C) Controllare solo il carburante",
+"D) Verificare solo le forche"
+],
+correct: 1,
+category: "manutenzione",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "È obbligatorio verificare efficienza dei freni, sterzo, dispositivi di segnalazione e integrità delle forche."
+},
+
+{
+id: 10,
+question: "Durante il trasporto il carico deve essere mantenuto:",
+options: [
+"A) Il più alto possibile",
+"B) A circa 10–15 cm dal suolo",
+"C) Oscillante",
+"D) Inclinato in avanti"
+],
+correct: 1,
+category: "tecnica_operativa",
+ref: "-",
+suggestion: "Il carico deve essere mantenuto basso e leggermente inclinato all’indietro per garantire stabilità."
+},
+{
+id: 11,
+question: "Quale obbligo ha il lavoratore nell'utilizzo del carrello elevatore?",
+options: [
+"A) Utilizzarlo secondo formazione e istruzioni ricevute",
+"B) Modificarlo se necessario",
+"C) Delegarne l’uso a colleghi non formati",
+"D) Ignorare le procedure aziendali"
+],
+correct: 0,
+category: "responsabilità",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Il lavoratore deve utilizzare correttamente le attrezzature conformemente a formazione e istruzioni ricevute."
+},
+
+{
+id: 12,
+question: "Quale elemento contribuisce alla stabilità longitudinale del carrello?",
+options: [
+"A) Il contrappeso",
+"B) Il volante",
+"C) Il clacson",
+"D) Il sedile"
+],
+correct: 0,
+category: "stabilità",
+ref: "-",
+suggestion: "Il contrappeso bilancia il carico sollevato mantenendo il baricentro entro il triangolo di stabilità."
+},
+
+{
+id: 13,
+question: "Il sovraccarico del carrello può provocare:",
+options: [
+"A) Maggiore stabilità",
+"B) Nessun effetto",
+"C) Ribaltamento in avanti",
+"D) Riduzione dei consumi"
+],
+correct: 2,
+category: "stabilità",
+ref: "-",
+suggestion: "Superare la portata nominale può spostare il baricentro oltre il limite anteriore causando ribaltamento."
+},
+
+{
+id: 14,
+question: "La portata nominale del carrello è indicata:",
+options: [
+"A) Sul libretto personale del lavoratore",
+"B) Sulla targhetta identificativa del mezzo",
+"C) Sul casco dell’operatore",
+"D) Sul DVR"
+],
+correct: 1,
+category: "tecnica_operativa",
+ref: "Art. 70 D.Lgs. 81/2008",
+suggestion: "La targhetta riporta portata, altezza di sollevamento e condizioni operative consentite."
+},
+
+{
+id: 15,
+question: "È consentito sollevare persone con le forche?",
+options: [
+"A) Sempre",
+"B) Solo con apposita piattaforma conforme",
+"C) Mai in nessun caso",
+"D) Solo per brevi periodi"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Allegato VI D.Lgs. 81/2008",
+suggestion: "Il sollevamento di persone è consentito solo con attrezzature idonee e conformi alle disposizioni normative."
+},
+
+{
+id: 16,
+question: "Durante la marcia con carico ingombrante che limita la visibilità l’operatore deve:",
+options: [
+"A) Procedere in retromarcia",
+"B) Accelerare",
+"C) Guidare con forche alte",
+"D) Spegnere il lampeggiante"
+],
+correct: 0,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Se la visuale anteriore è ostruita è necessario procedere in retromarcia o con segnalatore a terra."
+},
+
+{
+id: 17,
+question: "Le verifiche periodiche delle attrezzature sono a carico di:",
+options: [
+"A) Lavoratore",
+"B) RLS",
+"C) Datore di lavoro",
+"D) Cliente"
+],
+correct: 2,
+category: "responsabilità",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Il datore di lavoro deve assicurare controlli iniziali e periodici secondo le indicazioni del fabbricante."
+},
+
+{
+id: 18,
+question: "L’utilizzo del telefono cellulare durante la guida del carrello:",
+options: [
+"A) È consentito",
+"B) È vietato perché fonte di distrazione",
+"C) È obbligatorio",
+"D) È facoltativo"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "La distrazione durante la guida aumenta significativamente il rischio di incidente."
+},
+
+{
+id: 19,
+question: "Le forche devono essere posizionate durante la sosta:",
+options: [
+"A) Sollevate",
+"B) Abbassate completamente a terra",
+"C) In posizione intermedia",
+"D) Inclinate in avanti"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Le forche devono essere completamente abbassate per evitare rischio di urti o inciampi."
+},
+
+{
+id: 20,
+question: "In caso di guasto l’operatore deve:",
+options: [
+"A) Continuare il lavoro",
+"B) Tentare riparazioni improvvisate",
+"C) Segnalare immediatamente al responsabile",
+"D) Ignorare il problema"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Il lavoratore deve segnalare immediatamente eventuali difetti o condizioni di pericolo."
+},
+{
+id: 21,
+question: "Durante la percorrenza di una rampa con carico, il carrello deve essere condotto:",
+options: [
+"A) Con il carico rivolto verso valle",
+"B) Con il carico rivolto verso monte",
+"C) In folle",
+"D) Trasversalmente"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "In salita il carico deve essere sempre rivolto verso monte per mantenere il baricentro entro l’area di stabilità."
+},
+
+{
+id: 22,
+question: "Quale comportamento è corretto in prossimità di incroci o zone cieche?",
+options: [
+"A) Accelerare",
+"B) Suonare il clacson e rallentare",
+"C) Procedere senza segnalazioni",
+"D) Spegnere il lampeggiante"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Rallentare e segnalare la propria presenza riduce il rischio di collisioni con pedoni o altri mezzi."
+},
+
+{
+id: 23,
+question: "Il baricentro del sistema carrello-carico varia in funzione di:",
+options: [
+"A) Altezza e peso del carico",
+"B) Colore del carrello",
+"C) Tipo di sedile",
+"D) Marca del mezzo"
+],
+correct: 0,
+category: "stabilità",
+ref: "-",
+suggestion: "L’innalzamento del carico e l’aumento del peso spostano il baricentro influenzando la stabilità."
+},
+
+{
+id: 24,
+question: "La manutenzione ordinaria deve essere eseguita:",
+options: [
+"A) Solo in caso di guasto",
+"B) Secondo le indicazioni del fabbricante",
+"C) A discrezione dell’operatore",
+"D) Una volta all’anno senza criteri"
+],
+correct: 1,
+category: "manutenzione",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Le operazioni di manutenzione devono seguire il manuale d’uso e manutenzione del costruttore."
+},
+
+{
+id: 25,
+question: "È consentito trasportare persone sulle forche?",
+options: [
+"A) Sì, se per breve durata",
+"B) Solo con autorizzazione verbale",
+"C) No, salvo utilizzo di piattaforma conforme",
+"D) Sempre"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "Allegato VI D.Lgs. 81/2008",
+suggestion: "Il sollevamento di persone è ammesso solo con attrezzature specifiche e conformi alla normativa."
+},
+
+{
+id: 26,
+question: "Il carrello elevatore deve essere utilizzato:",
+options: [
+"A) Solo per gli usi previsti dal fabbricante",
+"B) Per qualsiasi attività di sollevamento",
+"C) Come mezzo di traino universale",
+"D) Senza limiti operativi"
+],
+correct: 0,
+category: "normativa",
+ref: "Art. 70 D.Lgs. 81/2008",
+suggestion: "Le attrezzature devono essere utilizzate conformemente alle istruzioni del costruttore."
+},
+
+{
+id: 27,
+question: "Quale documento contiene le istruzioni operative del carrello?",
+options: [
+"A) DVR",
+"B) Manuale d’uso e manutenzione",
+"C) Attestato del lavoratore",
+"D) Registro presenze"
+],
+correct: 1,
+category: "tecnica_operativa",
+ref: "Art. 70 D.Lgs. 81/2008",
+suggestion: "Il manuale del fabbricante contiene limiti di utilizzo, manutenzione e condizioni operative."
+},
+
+{
+id: 28,
+question: "La guida con forche sollevate comporta:",
+options: [
+"A) Maggiore stabilità",
+"B) Riduzione del rischio",
+"C) Spostamento del baricentro e aumento del rischio ribaltamento",
+"D) Nessuna conseguenza"
+],
+correct: 2,
+category: "stabilità",
+ref: "-",
+suggestion: "Forche sollevate alzano il baricentro riducendo la stabilità complessiva del mezzo."
+},
+
+{
+id: 29,
+question: "Il datore di lavoro deve assicurare che l’operatore sia:",
+options: [
+"A) Esperto informalmente",
+"B) Autorizzato e formato",
+"C) Solo maggiorenne",
+"D) In possesso di patente B"
+],
+correct: 1,
+category: "responsabilità",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "È obbligatoria formazione specifica e autorizzazione formale all’uso dell’attrezzatura."
+},
+
+{
+id: 30,
+question: "In caso di ribaltamento laterale l’operatore deve:",
+options: [
+"A) Saltare fuori",
+"B) Restare seduto con cintura allacciata",
+"C) Alzarsi in piedi",
+"D) Abbandonare il volante"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Restare seduti con cintura allacciata riduce il rischio di schiacciamento."
+},
+
+{
+id: 31,
+question: "La verifica dell’efficienza dei freni rientra tra:",
+options: [
+"A) Controlli preliminari",
+"B) Attività facoltative",
+"C) Compiti del cliente",
+"D) Operazioni vietate"
+],
+correct: 0,
+category: "manutenzione",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Prima dell’utilizzo devono essere verificati i principali dispositivi di sicurezza."
+},
+
+{
+id: 32,
+question: "L’uso improprio del carrello può comportare:",
+options: [
+"A) Nessuna conseguenza",
+"B) Sanzioni e responsabilità penali",
+"C) Solo richiamo verbale",
+"D) Aumento produttività"
+],
+correct: 1,
+category: "responsabilità",
+ref: "D.Lgs. 81/2008 Titolo I",
+suggestion: "Il mancato rispetto delle norme può generare responsabilità civili e penali."
+},
+
+{
+id: 33,
+question: "Le batterie dei carrelli elettrici devono essere ricaricate:",
+options: [
+"A) In ambienti ventilati",
+"B) In qualsiasi luogo",
+"C) In ufficio",
+"D) In prossimità di fiamme libere"
+],
+correct: 0,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Durante la ricarica possono svilupparsi gas; è necessario operare in ambienti ventilati."
+},
+
+{
+id: 34,
+question: "Il sovraccarico rispetto alla portata nominale è:",
+options: [
+"A) Consentito temporaneamente",
+"B) Vietato",
+"C) Raccomandato",
+"D) Facoltativo"
+],
+correct: 1,
+category: "stabilità",
+ref: "-",
+suggestion: "Il superamento della portata nominale compromette la stabilità e la sicurezza."
+},
+
+{
+id: 35,
+question: "Il lampeggiante serve a:",
+options: [
+"A) Illuminare il magazzino",
+"B) Segnalare la presenza del mezzo",
+"C) Migliorare la velocità",
+"D) Ridurre il consumo"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "I dispositivi luminosi aumentano la visibilità del mezzo nelle aree operative."
+},
+
+{
+id: 36,
+question: "La sostituzione di componenti deve essere effettuata:",
+options: [
+"A) Con pezzi non originali qualsiasi",
+"B) Con ricambi idonei secondo indicazioni del fabbricante",
+"C) Dall’operatore senza competenze",
+"D) Senza spegnere il mezzo"
+],
+correct: 1,
+category: "manutenzione",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "La manutenzione deve rispettare le specifiche tecniche del costruttore."
+},
+
+{
+id: 37,
+question: "Il carrello elevatore può essere utilizzato come gru generica?",
+options: [
+"A) Sempre",
+"B) Solo se previsto dal fabbricante",
+"C) Mai",
+"D) A discrezione del lavoratore"
+],
+correct: 1,
+category: "tecnica_operativa",
+ref: "Art. 70 D.Lgs. 81/2008",
+suggestion: "L’attrezzatura deve essere impiegata solo per gli usi previsti dal costruttore."
+},
+
+{
+id: 38,
+question: "L’operatore deve conoscere:",
+options: [
+"A) Solo la velocità massima",
+"B) Procedure operative e rischi specifici",
+"C) Solo il peso del mezzo",
+"D) Il numero di telaio"
+],
+correct: 1,
+category: "normativa",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "La formazione deve includere rischi specifici e corrette procedure operative."
+},
+
+{
+id: 39,
+question: "La circolazione in magazzino deve rispettare:",
+options: [
+"A) Regole definite dall’azienda",
+"B) Nessuna regola",
+"C) Solo indicazioni verbali",
+"D) Preferenze personali"
+],
+correct: 0,
+category: "sicurezza_operativa",
+ref: "Art. 18 D.Lgs. 81/2008",
+suggestion: "Il datore di lavoro deve organizzare la viabilità interna in sicurezza."
+},
+
+{
+id: 40,
+question: "La revisione periodica dell’attrezzatura deve essere documentata:",
+options: [
+"A) No",
+"B) Solo verbalmente",
+"C) Sì, con registrazione dei controlli",
+"D) Solo in caso di incidente"
+],
+correct: 2,
+category: "manutenzione",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Le verifiche devono essere registrate e conservate a disposizione degli organi di controllo."
+},
+{
+id: 41,
+question: "In caso di incendio in area di ricarica batterie, l’operatore deve:",
+options: [
+"A) Continuare la ricarica",
+"B) Intervenire solo dopo il turno",
+"C) Allontanarsi in sicurezza e attivare le procedure di emergenza",
+"D) Spegnere con acqua"
+],
+correct: 2,
+category: "emergenza_antincendio",
+ref: "D.M. 2 settembre 2021",
+suggestion: "Le procedure antincendio aziendali devono essere attivate immediatamente in caso di principio di incendio."
+},
+
+{
+id: 42,
+question: "L’uso dell’estintore su carrello endotermico deve avvenire:",
+options: [
+"A) Solo con acqua",
+"B) Con estintore idoneo (polvere ABC o CO2)",
+"C) Con sabbia umida",
+"D) Senza spegnere il mezzo"
+],
+correct: 1,
+category: "emergenza_antincendio",
+ref: "D.M. 2 settembre 2021",
+suggestion: "La tipologia di estintore deve essere adeguata alla classe di incendio."
+},
+
+{
+id: 43,
+question: "La formazione per carrellisti deve prevedere:",
+options: [
+"A) Solo teoria online",
+"B) Solo prova pratica",
+"C) Modulo teorico e pratico con verifica finale",
+"D) Solo lettura del manuale"
+],
+correct: 2,
+category: "normativa",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "L’Accordo Stato-Regioni prevede formazione teorica e pratica con verifica dell’apprendimento."
+},
+
+{
+id: 44,
+question: "La durata dell’abilitazione per carrelli elevatori è:",
+options: [
+"A) 1 anno",
+"B) 3 anni",
+"C) 5 anni",
+"D) Illimitata"
+],
+correct: 2,
+category: "normativa",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "L’abilitazione ha validità quinquennale con obbligo di aggiornamento."
+},
+
+{
+id: 45,
+question: "L’aggiornamento per carrellisti deve essere effettuato:",
+options: [
+"A) Ogni 5 anni",
+"B) Ogni anno",
+"C) Solo in caso di incidente",
+"D) Mai"
+],
+correct: 0,
+category: "normativa",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "È previsto aggiornamento quinquennale minimo di 4 ore."
+},
+
+{
+id: 46,
+question: "Chi deve verificare l’idoneità dell’operatore alla guida del carrello?",
+options: [
+"A) Solo l’operatore",
+"B) Il datore di lavoro o il preposto",
+"C) Il manutentore",
+"D) Il collega più anziano"
+],
+correct: 1,
+category: "responsabilità",
+ref: "Art. 18 D.Lgs. 81/2008",
+suggestion: "Il datore di lavoro deve vigilare sull’idoneità e sulla formazione dei lavoratori."
+},
+
+{
+id: 47,
+question: "Il patentino per carrelli elevatori è:",
+options: [
+"A) Cedibile",
+"B) Aziendale",
+"C) Personale e nominativo",
+"D) Facoltativo"
+],
+correct: 2,
+category: "normativa",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "L’abilitazione è personale e non trasferibile."
+},
+
+{
+id: 48,
+question: "Prima di utilizzare un carrello diverso da quello abituale, l’operatore deve:",
+options: [
+"A) Solo provarlo",
+"B) Ricevere informazione e addestramento specifico",
+"C) Guidarlo lentamente",
+"D) Chiedere ai colleghi"
+],
+correct: 1,
+category: "formazione",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "L’addestramento deve essere adeguato anche in caso di cambio attrezzatura."
+},
+
+{
+id: 49,
+question: "L’esposizione a gas di scarico in ambienti chiusi si riduce:",
+options: [
+"A) Usando mezzi endotermici senza ventilazione",
+"B) Preferendo carrelli elettrici o garantendo adeguato ricambio d’aria",
+"C) Accelerando al massimo",
+"D) Tenendo porte chiuse"
+],
+correct: 1,
+category: "salute_lavoro",
+ref: "Titolo IX D.Lgs. 81/2008",
+suggestion: "L’esposizione ad agenti chimici deve essere ridotta tramite misure tecniche e organizzative."
+},
+
+{
+id: 50,
+question: "Il controllo giornaliero dell’attrezzatura è previsto:",
+options: [
+"A) Solo in caso di guasto",
+"B) Prima dell’inizio del turno",
+"C) Una volta al mese",
+"D) Solo dal manutentore"
+],
+correct: 1,
+category: "manutenzione",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Le attrezzature devono essere mantenute in efficienza e controllate prima dell’uso."
+},
+{
+id: 51,
+question: "Come si verifica la portata massima di un carrello elevatore?",
+options: [
+"A) Consultando la targhetta di portata applicata dal costruttore",
+"B) Stimando il peso del carico visivamente",
+"C) Consultando il libretto di circolazione",
+"D) In base al colore del carrello"
+],
+correct: 0,
+category: "stabilità_operativa",
+ref: "Art. 70 D.Lgs. 81/2008",
+suggestion: "La portata nominale è indicata sulla targhetta del costruttore e deve essere sempre rispettata in relazione al baricentro del carico."
+},
+
+{
+id: 52,
+question: "Se durante la marcia si avverte una vibrazione anomala, l’operatore deve:",
+options: [
+"A) Proseguire la marcia",
+"B) Arrestare immediatamente il mezzo in sicurezza e segnalare l’anomalia",
+"C) Accelerare per stabilizzare il mezzo",
+"D) Limitarsi a rallentare"
+],
+correct: 1,
+category: "manutenzione_controlli",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Qualsiasi anomalia deve essere segnalata immediatamente e il mezzo non deve essere utilizzato fino a verifica tecnica."
+},
+
+{
+id: 53,
+question: "Qual è la procedura corretta per salire sul carrello elevatore?",
+options: [
+"A) Saltare direttamente nella cabina",
+"B) Utilizzare il gradino antiscivolo e il maniglione di presa",
+"C) Salire esclusivamente dal lato sinistro",
+"D) Accedere da dietro il mezzo"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "È necessario utilizzare i punti di accesso previsti dal costruttore per prevenire cadute."
+},
+
+{
+id: 54,
+question: "Quando deve essere utilizzata la retromarcia durante la movimentazione?",
+options: [
+"A) Sempre",
+"B) Quando il carico limita o impedisce la visibilità anteriore",
+"C) Solo in salita",
+"D) Solo durante le ore notturne"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "La retromarcia è obbligatoria quando la visibilità anteriore è compromessa dal carico."
+},
+
+{
+id: 55,
+question: "Cosa indica la lettera “Q” sulla targhetta di portata?",
+options: [
+"A) La velocità massima consentita",
+"B) La portata nominale del carrello",
+"C) Il numero di matricola",
+"D) L’anno di fabbricazione"
+],
+correct: 1,
+category: "stabilità_operativa",
+ref: "Art. 70 D.Lgs. 81/2008",
+suggestion: "La lettera Q identifica la capacità nominale di sollevamento espressa in chilogrammi."
+},
+
+{
+id: 56,
+question: "Durante la percorrenza su pendenza, il carico deve essere mantenuto:",
+options: [
+"A) Sollevato alla massima altezza",
+"B) Basso e inclinato all’indietro",
+"C) Inclinato in avanti",
+"D) Posizionato lateralmente"
+],
+correct: 1,
+category: "stabilità_operativa",
+ref: "-",
+suggestion: "Il carico deve essere mantenuto basso (circa 15-20 cm da terra) e inclinato verso il montante per garantire stabilità."
+},
+
+{
+id: 57,
+question: "Qual è l’effetto di un carico decentrato lateralmente?",
+options: [
+"A) Aumenta la stabilità",
+"B) Riduce la stabilità trasversale aumentando il rischio di ribaltamento",
+"C) Non produce effetti",
+"D) Aumenta la velocità del mezzo"
+],
+correct: 1,
+category: "stabilità_operativa",
+ref: "-",
+suggestion: "Il carico decentrato sposta il baricentro fuori dal triangolo di stabilità."
+},
+
+{
+id: 58,
+question: "Prima di sollevare un carico è necessario:",
+options: [
+"A) Verificare che il peso rientri nella portata indicata",
+"B) Sollevare immediatamente",
+"C) Chiedere al collega più vicino",
+"D) Attivare il clacson"
+],
+correct: 0,
+category: "stabilità_operativa",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "È obbligatorio verificare la compatibilità tra peso del carico e portata nominale."
+},
+
+{
+id: 59,
+question: "Qual è la procedura corretta per depositare un carico su uno scaffale alto?",
+options: [
+"A) Inclinare in avanti e depositare rapidamente",
+"B) Avvicinarsi con montante verticale, depositare gradualmente e ritirare le forche",
+"C) Inclinare indietro prima del deposito",
+"D) Procedere in retromarcia"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Il deposito deve essere graduale con montante verticale e ritiro controllato delle forche."
+},
+
+{
+id: 60,
+question: "Quando la visibilità anteriore è completamente ostruita dal carico, è necessario:",
+options: [
+"A) Procedere comunque",
+"B) Utilizzare un segnalatore a terra",
+"C) Accelerare per liberare il corridoio",
+"D) Procedere a zig-zag"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Art. 18 D.Lgs. 81/2008",
+suggestion: "Il datore di lavoro deve organizzare la viabilità interna garantendo sicurezza in caso di visibilità limitata."
+},
+{
+id: 61,
+question: "Il datore di lavoro deve assicurare che l’attrezzatura sia:",
+options: [
+"A) Conforme ai requisiti di sicurezza e idonea all’uso previsto",
+"B) Economica",
+"C) Di colore visibile",
+"D) Di recente acquisto"
+],
+correct: 0,
+category: "normativa_generale",
+ref: "Art. 70 D.Lgs. 81/2008",
+suggestion: "Le attrezzature devono essere conformi ai requisiti di sicurezza e adeguate alle condizioni operative."
+},
+
+{
+id: 62,
+question: "Quale documento deve attestare l’avvenuta formazione del carrellista?",
+options: [
+"A) Autocertificazione del lavoratore",
+"B) Attestato di abilitazione rilasciato da ente formatore",
+"C) Contratto di lavoro",
+"D) Documento di identità"
+],
+correct: 1,
+category: "formazione_abilitazione",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "L’abilitazione è documentata da attestato nominativo rilasciato al termine del percorso formativo."
+},
+
+{
+id: 63,
+question: "Il preposto ha il compito di:",
+options: [
+"A) Sostituire il datore di lavoro",
+"B) Vigilare sull’osservanza delle procedure di sicurezza",
+"C) Effettuare la manutenzione tecnica",
+"D) Rilasciare attestati"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 19 D.Lgs. 81/2008",
+suggestion: "Il preposto sovrintende e vigila sulla corretta esecuzione delle attività lavorative."
+},
+
+{
+id: 64,
+question: "L’uso di carrelli in ambienti chiusi con motore endotermico richiede:",
+options: [
+"A) Nessuna precauzione",
+"B) Adeguata ventilazione",
+"C) Porte chiuse",
+"D) Velocità elevata"
+],
+correct: 1,
+category: "salute_esposizione",
+ref: "Titolo IX D.Lgs. 81/2008",
+suggestion: "L’esposizione ad agenti chimici deve essere prevenuta mediante adeguata aerazione."
+},
+
+{
+id: 65,
+question: "Il Documento di Valutazione dei Rischi deve includere:",
+options: [
+"A) Solo rischi generici",
+"B) Rischi connessi all’uso delle attrezzature di lavoro",
+"C) Solo rischi incendio",
+"D) Solo rischi elettrici"
+],
+correct: 1,
+category: "normativa_generale",
+ref: "Art. 28 D.Lgs. 81/2008",
+suggestion: "La valutazione dei rischi deve comprendere tutte le attrezzature utilizzate."
+},
+
+{
+id: 66,
+question: "L’addestramento pratico deve essere effettuato:",
+options: [
+"A) Solo online",
+"B) In presenza con prova operativa",
+"C) Facoltativamente",
+"D) Solo dopo un incidente"
+],
+correct: 1,
+category: "formazione_abilitazione",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "L’addestramento deve prevedere prova pratica documentata."
+},
+
+{
+id: 67,
+question: "La mancata formazione del carrellista può comportare:",
+options: [
+"A) Nessuna conseguenza",
+"B) Sanzioni penali e amministrative per il datore di lavoro",
+"C) Solo richiamo scritto",
+"D) Sospensione automatica dell’azienda"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 55 D.Lgs. 81/2008",
+suggestion: "La violazione degli obblighi formativi comporta sanzioni per il datore di lavoro."
+},
+
+{
+id: 68,
+question: "Prima dell’inizio del turno, l’operatore deve:",
+options: [
+"A) Effettuare controllo visivo e funzionale del mezzo",
+"B) Iniziare subito il lavoro",
+"C) Delegare il controllo",
+"D) Verificare solo il carburante"
+],
+correct: 0,
+category: "manutenzione_controlli",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "I controlli preliminari garantiscono l’efficienza e la sicurezza dell’attrezzatura."
+},
+
+{
+id: 69,
+question: "Il carico deve essere sollevato:",
+options: [
+"A) Con movimenti bruschi",
+"B) Con manovre progressive e controllate",
+"C) Alla massima velocità",
+"D) Con inclinazione in avanti"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Le manovre devono essere fluide per evitare instabilità."
+},
+
+{
+id: 70,
+question: "L’area di ricarica batterie deve essere:",
+options: [
+"A) Non segnalata",
+"B) Segnalata e ventilata",
+"C) Utilizzata come deposito",
+"D) Accessibile a chiunque"
+],
+correct: 1,
+category: "emergenza_antincendio",
+ref: "D.M. 2 settembre 2021",
+suggestion: "Le aree a rischio incendio devono essere adeguatamente organizzate e segnalate."
+},
+
+{
+id: 71,
+question: "La segnaletica di sicurezza in magazzino serve a:",
+options: [
+"A) Decorare l’ambiente",
+"B) Indicare rischi e percorsi sicuri",
+"C) Identificare i turni",
+"D) Segnalare ferie"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Titolo V D.Lgs. 81/2008",
+suggestion: "La segnaletica informa sui rischi e sulle prescrizioni di sicurezza."
+},
+
+{
+id: 72,
+question: "Il lavoratore ha l’obbligo di:",
+options: [
+"A) Rifiutare ogni incarico",
+"B) Utilizzare correttamente le attrezzature",
+"C) Modificare il mezzo se necessario",
+"D) Sostituire il manutentore"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Il lavoratore deve attenersi alle istruzioni ricevute e utilizzare correttamente i mezzi."
+},
+
+{
+id: 73,
+question: "L’abilitazione alla guida del carrello è valida:",
+options: [
+"A) Solo nell’azienda di rilascio",
+"B) Su tutto il territorio nazionale",
+"C) Solo nella regione di rilascio",
+"D) Solo nel settore privato"
+],
+correct: 1,
+category: "formazione_abilitazione",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "L’abilitazione è riconosciuta su tutto il territorio nazionale."
+},
+
+{
+id: 74,
+question: "In caso di condizioni meteorologiche avverse in area esterna, l’operatore deve:",
+options: [
+"A) Proseguire senza modifiche",
+"B) Valutare il rischio e adeguare la velocità",
+"C) Accelerare",
+"D) Disattivare i dispositivi luminosi"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Le condizioni ambientali influiscono sulla stabilità e sulla sicurezza della guida."
+},
+
+{
+id: 75,
+question: "La responsabilità della manutenzione straordinaria è in capo a:",
+options: [
+"A) Operatore",
+"B) Datore di lavoro",
+"C) Cliente",
+"D) RLS"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Il datore di lavoro deve garantire manutenzione ordinaria e straordinaria dell’attrezzatura."
+},
+{
+id: 76,
+question: "Un lavoratore esperto che ha guidato carrelli elevatori in un’altra azienda può essere autorizzato immediatamente alla guida?",
+options: [
+"A) Sì, se firma presa visione del DVR",
+"B) Solo dopo verifica abilitazione e integrazione informazione/addestramento sulle condizioni aziendali",
+"C) Sì, in area a basso rischio per un periodo di prova",
+"D) Sì, previa verifica con test scritto interno"
+],
+correct: 1,
+category: "formazione_abilitazione",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "L’esperienza non sostituisce verifica abilitazione e adeguamento alle condizioni specifiche di impiego."
+},
+
+{
+id: 77,
+question: "Quale struttura formativa è coerente con l’Accordo Stato-Regioni per carrelli elevatori?",
+options: [
+"A) Solo prova pratica generica",
+"B) Solo modulo tecnico",
+"C) Moduli giuridico-tecnico-pratico con verifica finale e tracciabilità documentale",
+"D) Addestramento interno con attestato firmato dal preposto"
+],
+correct: 2,
+category: "formazione_abilitazione",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "L’Accordo definisce durata, contenuti, verifica finale e soggetti formatori abilitati."
+},
+
+{
+id: 78,
+question: "Assenza di manutenzione documentata su carrello elevatore comporta quale non conformità principale?",
+options: [
+"A) Mancanza indicazione limite velocità",
+"B) Mancanza assegnazione nominativa mezzo",
+"C) Assenza bollino RLS",
+"D) Mancato mantenimento requisiti di sicurezza e tracciabilità controlli"
+],
+correct: 3,
+category: "manutenzione_controlli",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Il datore di lavoro deve garantire manutenzione e controlli documentati."
+},
+
+{
+id: 79,
+question: "Il lavoratore che rileva un’anomalia su dispositivo di segnalazione acustica deve:",
+options: [
+"A) Compensare con maggiore attenzione",
+"B) Segnalare solo se presenti pedoni",
+"C) Segnalare immediatamente e attenersi alle istruzioni ricevute",
+"D) Riparare autonomamente"
+],
+correct: 2,
+category: "ruoli_responsabilita",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "È obbligatoria la segnalazione immediata delle deficienze."
+},
+
+{
+id: 80,
+question: "Il preposto che osserva una manovra non sicura deve:",
+options: [
+"A) Annotare e rinviare",
+"B) Intervenire immediatamente e, se necessario, interrompere l’attività",
+"C) Sostituire l’operatore",
+"D) Limitarsi a richiamo verbale generico"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 19 D.Lgs. 81/2008",
+suggestion: "Il preposto vigila e interviene su comportamenti non conformi."
+},
+
+{
+id: 81,
+question: "L’informazione al lavoratore abilitato deve comunque includere:",
+options: [
+"A) Solo normativa generale",
+"B) Solo portata mezzo",
+"C) Solo manuale costruttore",
+"D) Rischi specifici del luogo e procedure aziendali"
+],
+correct: 3,
+category: "formazione_abilitazione",
+ref: "Art. 36 D.Lgs. 81/2008",
+suggestion: "L’informazione deve essere mirata ai rischi specifici."
+},
+
+{
+id: 82,
+question: "La formazione deve essere:",
+options: [
+"A) Standard identica per tutti",
+"B) Limitata a emergenze",
+"C) Adeguata ai rischi della mansione secondo Accordi vigenti",
+"D) Solo con quiz finale"
+],
+correct: 2,
+category: "formazione_abilitazione",
+ref: "Art. 37 D.Lgs. 81/2008",
+suggestion: "La formazione deve essere sufficiente e adeguata ai rischi specifici."
+},
+
+{
+id: 83,
+question: "In traffico promiscuo la sicurezza dipende:",
+options: [
+"A) Solo dall’attenzione del mulettista",
+"B) Solo dai DPI pedoni",
+"C) Solo da procedura scritta",
+"D) Da misure organizzative, tecniche e vigilanza del datore/dirigenti"
+],
+correct: 3,
+category: "ruoli_responsabilita",
+ref: "Art. 18 D.Lgs. 81/2008",
+suggestion: "La prevenzione è responsabilità organizzativa."
+},
+
+{
+id: 84,
+question: "Cambio reparto con stesse attrezzature ma nuove condizioni operative richiede:",
+options: [
+"A) Nessuna azione",
+"B) Aggiornamento informazione/addestramento mirato",
+"C) Rifare intero corso",
+"D) Solo firma presenza"
+],
+correct: 1,
+category: "formazione_abilitazione",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "Le condizioni di impiego incidono sull’adeguatezza della formazione."
+},
+
+{
+id: 85,
+question: "Attestati privi di tracciabilità espongono l’azienda a:",
+options: [
+"A) Nessun rischio",
+"B) Solo rilievo formale minore",
+"C) Impossibilità dimostrare conformità requisiti minimi",
+"D) Problemi solo fiscali"
+],
+correct: 2,
+category: "formazione_abilitazione",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "Programma, presenze e verifica devono essere documentati."
+},
+
+{
+id: 86,
+question: "Durante ricarica batteria muletto elettrico il rischio principale è:",
+options: [
+"A) Emissione CO",
+"B) Sviluppo idrogeno e rischio innesco",
+"C) Congelamento elettrolita",
+"D) Solo arco interno"
+],
+correct: 1,
+category: "emergenza_antincendio",
+ref: "Titolo IX D.Lgs. 81/2008",
+suggestion: "La ventilazione è essenziale per prevenire rischio esplosione."
+},
+
+{
+id: 87,
+question: "Portata 1.800 kg a 500 mm indica:",
+options: [
+"A) Interasse",
+"B) Altezza da suolo",
+"C) Larghezza forche",
+"D) Distanza orizzontale centro di carico"
+],
+correct: 3,
+category: "sicurezza_operativa",
+ref: "Manuale costruttore",
+suggestion: "Aumentando il centro di carico si riduce la portata effettiva."
+},
+
+{
+id: 88,
+question: "Con pedana uomo a bordo aumenta il rischio perché:",
+options: [
+"A) Sterzo più morbido",
+"B) Portata maggiore",
+"C) Aumentano velocità ed energia cinetica",
+"D) Frenata sempre perfetta"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Maggiore velocità implica maggior spazio arresto."
+},
+
+{
+id: 89,
+question: "Uso muletto endotermico indoor richiede cautela per:",
+options: [
+"A) Riduzione portata automatica",
+"B) Divieto clacson",
+"C) Freni meno efficienti",
+"D) Emissioni e rischio innesco"
+],
+correct: 3,
+category: "salute_esposizione",
+ref: "Titolo IX D.Lgs. 81/2008",
+suggestion: "Valutare ventilazione ed esposizione a gas di scarico."
+},
+
+{
+id: 90,
+question: "Trasporto carico alto rispetto necessario:",
+options: [
+"A) Migliora stabilità",
+"B) Non incide",
+"C) Peggiora stabilità per aumento baricentro",
+"D) Migliora frenata"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Baricentro alto aumenta rischio ribaltamento."
+},
+
+{
+id: 91,
+question: "Pallet danneggiato e carico sporgente richiede:",
+options: [
+"A) Inforcare parzialmente",
+"B) Procedere lentamente",
+"C) Sollevare più in alto",
+"D) Ripristinare sicurezza unità di carico prima movimentazione"
+],
+correct: 3,
+category: "sicurezza_operativa",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Non movimentare carichi instabili."
+},
+
+{
+id: 92,
+question: "Spazio di arresto dipende principalmente da:",
+options: [
+"A) Tipo pneumatico solo",
+"B) Freno stazionamento",
+"C) Velocità, massa, aderenza, stato impianto frenante",
+"D) Tipo batteria"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Energia cinetica e attrito determinano distanza arresto."
+},
+
+{
+id: 93,
+question: "In rampa con carico è corretto:",
+options: [
+"A) Ruote libere",
+"B) Carico alto",
+"C) Sterzare su pendenza",
+"D) Velocità ridotta e rispetto istruzioni costruttore"
+],
+correct: 3,
+category: "sicurezza_operativa",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Le manovre devono essere progressive e controllate."
+},
+
+{
+id: 94,
+question: "Manomettere sensore presenza operatore è:",
+options: [
+"A) Ammissibile temporaneamente",
+"B) Accettabile per urgenza",
+"C) Vietato: occorre verifica tecnica autorizzata",
+"D) Preferibile sostituire mezzo"
+],
+correct: 2,
+category: "manutenzione_controlli",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Non alterare dispositivi di sicurezza."
+},
+
+{
+id: 95,
+question: "Combinazione più rischiosa in curva:",
+options: [
+"A) Carico centrato e curva ampia",
+"B) Carico alto ma lento",
+"C) Carico instabile e curva stretta veloce",
+"D) Carico centrato e lento"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Instabilità + velocità aumentano rischio rovesciamento."
+},
+{
+id: 96,
+question: "Prima di iniziare il turno, quale verifica è obbligatoria sul carrello elevatore?",
+options: [
+"A) Solo il livello carburante",
+"B) Solo la pulizia della cabina",
+"C) Controllo visivo e funzionale di freni, sterzo, dispositivi di sicurezza e stato generale",
+"D) Nessuna verifica se il mezzo ha lavorato il giorno prima"
+],
+correct: 2,
+category: "manutenzione_controlli",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "L’attrezzatura deve essere mantenuta in efficienza e verificata prima dell’uso."
+},
+
+{
+id: 97,
+question: "La responsabilità della manutenzione periodica programmata ricade su:",
+options: [
+"A) Solo sull’operatore",
+"B) Solo sul manutentore esterno",
+"C) Sul datore di lavoro che deve garantirla",
+"D) Sul RLS"
+],
+correct: 2,
+category: "ruoli_responsabilita",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Il datore di lavoro deve assicurare manutenzione e controlli periodici."
+},
+
+{
+id: 98,
+question: "Durante la movimentazione di carichi sospesi sopra persone è corretto:",
+options: [
+"A) Procedere rapidamente",
+"B) Avvisare verbalmente e passare comunque",
+"C) Evitare il transito e interdire l’area sottostante",
+"D) Alzare ulteriormente il carico"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "Allegato VI D.Lgs. 81/2008",
+suggestion: "È vietato transitare con carichi sopra persone."
+},
+
+{
+id: 99,
+question: "La segnaletica orizzontale nei magazzini serve principalmente a:",
+options: [
+"A) Decorare l’area",
+"B) Separare percorsi pedonali e carrabili",
+"C) Indicare solo limiti di velocità",
+"D) Indicare turni di lavoro"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Titolo V D.Lgs. 81/2008",
+suggestion: "La segnaletica contribuisce alla prevenzione delle interferenze."
+},
+
+{
+id: 100,
+question: "Il triangolo di stabilità del carrello elevatore definisce:",
+options: [
+"A) La velocità massima consentita",
+"B) L’area entro cui deve rimanere il baricentro per evitare ribaltamento",
+"C) L’angolo massimo di sterzata",
+"D) L’altezza massima di sollevamento"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Se il baricentro esce dal triangolo di stabilità il mezzo può ribaltarsi."
+},
+
+{
+id: 101,
+question: "Durante la marcia senza carico le forche devono essere:",
+options: [
+"A) Alte per migliorare visibilità",
+"B) Inclinate in avanti",
+"C) Basse (15-20 cm) e leggermente inclinate all’indietro",
+"D) Appoggiate completamente a terra"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Forche basse riducono rischio urti e perdita stabilità."
+},
+
+{
+id: 102,
+question: "Il superamento della portata nominale comporta:",
+options: [
+"A) Solo maggiore consumo carburante",
+"B) Rischio di ribaltamento e cedimento strutturale",
+"C) Nessun effetto immediato",
+"D) Migliore stabilità"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "È vietato usare l’attrezzatura oltre i limiti previsti dal costruttore."
+},
+
+{
+id: 103,
+question: "In presenza di pavimentazione sconnessa è corretto:",
+options: [
+"A) Aumentare velocità per superare ostacoli",
+"B) Procedere lentamente mantenendo carico basso",
+"C) Sollevare il carico per evitare urti",
+"D) Guidare in retromarcia costante"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Velocità moderata riduce vibrazioni e instabilità."
+},
+
+{
+id: 104,
+question: "Il freno di stazionamento deve essere inserito:",
+options: [
+"A) Solo su pendenze elevate",
+"B) Solo a fine turno",
+"C) Ogni volta che si lascia il mezzo incustodito",
+"D) Solo in area esterna"
+],
+correct: 2,
+category: "sicurezza_operativa",
+ref: "Allegato VI D.Lgs. 81/2008",
+suggestion: "Il mezzo deve essere messo in sicurezza quando non presidiato."
+},
+
+{
+id: 105,
+question: "La valutazione del rischio interferenziale tra muletti e pedoni è contenuta nel:",
+options: [
+"A) Registro infortuni",
+"B) DVR aziendale",
+"C) Libro unico del lavoro",
+"D) Manuale del costruttore"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 17 D.Lgs. 81/2008",
+suggestion: "Il DVR individua e valuta tutti i rischi presenti in azienda."
+},
+
+{
+id: 106,
+question: "Durante la sostituzione di bombola GPL è necessario:",
+options: [
+"A) Operare vicino a fonti di calore",
+"B) Verificare assenza fiamme e perdite",
+"C) Accendere il motore per test immediato",
+"D) Usare utensili improvvisati"
+],
+correct: 1,
+category: "emergenza_antincendio",
+ref: "Titolo IX D.Lgs. 81/2008",
+suggestion: "Il GPL comporta rischio incendio ed esplosione."
+},
+
+{
+id: 107,
+question: "Il mancato uso della cintura di sicurezza espone a:",
+options: [
+"A) Solo sanzione disciplinare interna",
+"B) Aumento rischio schiacciamento in caso di ribaltamento",
+"C) Migliore libertà di movimento",
+"D) Nessun rischio"
+],
+correct: 1,
+category: "DPI",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Il lavoratore deve utilizzare correttamente i DPI e dispositivi di sicurezza."
+},
+
+{
+id: 108,
+question: "La revisione straordinaria del mezzo è richiesta quando:",
+options: [
+"A) Si cambia operatore",
+"B) Dopo evento anomalo o incidente significativo",
+"C) Ogni settimana",
+"D) Solo a fine anno"
+],
+correct: 1,
+category: "manutenzione_controlli",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Eventi anomali richiedono verifica dell’idoneità all’uso."
+},
+
+{
+id: 109,
+question: "La formazione pratica deve essere effettuata:",
+options: [
+"A) Su simulatore esclusivamente",
+"B) Su mezzo reale della categoria prevista",
+"C) Solo con video dimostrativi",
+"D) Solo tramite affiancamento informale"
+],
+correct: 1,
+category: "formazione_abilitazione",
+ref: "Accordo Stato-Regioni 22/02/2012",
+suggestion: "È prevista prova pratica su attrezzatura reale."
+},
+
+{
+id: 110,
+question: "In caso di urto accidentale contro scaffalatura è necessario:",
+options: [
+"A) Riprendere subito il lavoro",
+"B) Segnalare e verificare stabilità struttura prima di proseguire",
+"C) Spostare manualmente lo scaffale",
+"D) Ignorare se non vi sono danni visibili"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Ogni anomalia strutturale deve essere segnalata."
+},
+
+{
+id: 111,
+question: "Il datore di lavoro deve aggiornare la valutazione dei rischi quando:",
+options: [
+"A) Cambia colore carrello",
+"B) Introduce nuove attrezzature o modifiche organizzative rilevanti",
+"C) Cambia turno operatore",
+"D) Viene assunto un lavoratore stagionale"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 29 D.Lgs. 81/2008",
+suggestion: "Il DVR va aggiornato in caso di modifiche significative."
+},
+
+{
+id: 112,
+question: "La mancata formazione specifica può comportare:",
+options: [
+"A) Solo richiamo verbale",
+"B) Responsabilità penale per il datore di lavoro in caso di infortunio",
+"C) Nessuna conseguenza",
+"D) Solo sanzione amministrativa al lavoratore"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 73 D.Lgs. 81/2008",
+suggestion: "La formazione è obbligo giuridico del datore di lavoro."
+},
+
+{
+id: 113,
+question: "Il carrello elevatore rientra tra:",
+options: [
+"A) Dispositivi medici",
+"B) Attrezzature di lavoro",
+"C) DPI",
+"D) Impianti fissi"
+],
+correct: 1,
+category: "normativa_generale",
+ref: "Art. 69 D.Lgs. 81/2008",
+suggestion: "È definito attrezzatura di lavoro dal Testo Unico."
+},
+
+{
+id: 114,
+question: "L’operatore deve collaborare alla sicurezza:",
+options: [
+"A) Solo in presenza del preposto",
+"B) Sempre, rispettando procedure e istruzioni",
+"C) Solo in caso di emergenza",
+"D) Solo durante audit"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Il lavoratore ha obblighi di cooperazione alla sicurezza."
+},
+
+{
+id: 115,
+question: "La guida con telefono cellulare in uso è:",
+options: [
+"A) Consentita se breve",
+"B) Vietata perché distrae e aumenta rischio infortunio",
+"C) Consentita con auricolare",
+"D) Consentita a bassa velocità"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Comportamenti imprudenti violano obblighi di sicurezza."
+},
+
+{
+id: 116,
+question: "L’illuminazione insufficiente dell’area di lavoro deve essere:",
+options: [
+"A) Ignorata",
+"B) Segnalata e corretta prima della movimentazione",
+"C) Compensata aumentando velocità",
+"D) Risolta con fari personali non autorizzati"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Allegato IV D.Lgs. 81/2008",
+suggestion: "Gli ambienti di lavoro devono avere illuminazione adeguata."
+},
+
+{
+id: 117,
+question: "La verifica periodica delle competenze dell’operatore è:",
+options: [
+"A) Facoltativa",
+"B) Parte del sistema di gestione sicurezza aziendale",
+"C) Solo sindacale",
+"D) Prevista solo per neoassunti"
+],
+correct: 1,
+category: "formazione_abilitazione",
+ref: "Art. 18 D.Lgs. 81/2008",
+suggestion: "Il datore deve garantire adeguatezza nel tempo."
+},
+
+{
+id: 118,
+question: "La movimentazione in spazi ristretti richiede:",
+options: [
+"A) Velocità costante elevata",
+"B) Manovre lente e controllo continuo degli ingombri",
+"C) Forche alte",
+"D) Sterzate brusche"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "-",
+suggestion: "Ridurre velocità e controllare ingombri laterali."
+},
+
+{
+id: 119,
+question: "In caso di malfunzionamento dello sterzo è necessario:",
+options: [
+"A) Terminare il turno",
+"B) Mettere fuori servizio il mezzo e segnalarlo",
+"C) Ridurre solo velocità",
+"D) Compensare con freno"
+],
+correct: 1,
+category: "manutenzione_controlli",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Attrezzature non sicure non devono essere utilizzate."
+},
+
+{
+id: 120,
+question: "Il rischio vibrazioni corpo intero è valutato ai sensi del:",
+options: [
+"A) Titolo I",
+"B) Titolo VIII D.Lgs. 81/2008",
+"C) Titolo X",
+"D) Titolo III solo"
+],
+correct: 1,
+category: "salute_esposizione",
+ref: "Titolo VIII D.Lgs. 81/2008",
+suggestion: "Il rischio vibrazioni rientra tra gli agenti fisici."
+},
+
+{
+id: 121,
+question: "L’operatore deve interrompere l’attività quando:",
+options: [
+"A) È stanco ma vuole terminare lavoro",
+"B) Ritiene sussista pericolo grave e immediato",
+"C) Il collega lo chiede",
+"D) Il turno è quasi finito"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 44 D.Lgs. 81/2008",
+suggestion: "Il lavoratore può allontanarsi in caso di pericolo grave e immediato."
+},
+
+{
+id: 122,
+question: "Il mancato rispetto delle procedure aziendali di sicurezza costituisce:",
+options: [
+"A) Solo infrazione amministrativa generica",
+"B) Violazione degli obblighi del lavoratore",
+"C) Nessuna violazione se non accade incidente",
+"D) Responsabilità esclusiva del RSPP"
+],
+correct: 1,
+category: "ruoli_responsabilita",
+ref: "Art. 20 D.Lgs. 81/2008",
+suggestion: "Le procedure sono parte integrante delle misure di prevenzione."
+},
+
+{
+id: 123,
+question: "L’uso di accessori non previsti dal costruttore comporta:",
+options: [
+"A) Miglioramento automatico prestazioni",
+"B) Alterazione caratteristiche sicurezza e necessità verifica tecnica",
+"C) Nessuna variazione",
+"D) Riduzione vibrazioni"
+],
+correct: 1,
+category: "manutenzione_controlli",
+ref: "Art. 71 D.Lgs. 81/2008",
+suggestion: "Ogni modifica può incidere sulla sicurezza e portata."
+},
+
+{
+id: 124,
+question: "Il carrello elevatore può essere utilizzato per sollevare persone:",
+options: [
+"A) Sempre con pallet",
+"B) Solo con attrezzature certificate e procedure specifiche",
+"C) Mai in nessun caso",
+"D) Solo in emergenza"
+],
+correct: 1,
+category: "sicurezza_operativa",
+ref: "Allegato VI D.Lgs. 81/2008",
+suggestion: "Il sollevamento persone richiede dispositivi idonei e autorizzazione."
+},
+
+{
+id: 125,
+question: "Il sistema di prevenzione aziendale deve garantire:",
+options: [
+"A) Solo formazione iniziale",
+"B) Miglioramento continuo delle condizioni di sicurezza",
+"C) Solo rispetto minimo legge",
+"D) Solo controlli ispettivi"
+],
+correct: 1,
+category: "normativa_generale",
+ref: "Art. 15 D.Lgs. 81/2008",
+suggestion: "La prevenzione si basa su programmazione e miglioramento continuo."
+}
 ];
 // ============================================
 // VARIABILI GLOBALI
